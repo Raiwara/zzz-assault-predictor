@@ -1,0 +1,62 @@
+[
+  {
+    "id": "frigidity",
+    "name": "Frigidity (Оледенение)",
+    "ruName": "Оледенение (Frigidity)",
+    "description": "Увеличивает ледяной урон и знание аномалии. Срабатывание Цветения (Abloom) или Хаоса (Disorder) значительно повышает урон аномалий.",
+    "favoredAttribute": [
+      "Ice"
+    ],
+    "favoredSpecialty": [
+      "Anomaly"
+    ],
+    "bonusMultiplier": 0.22
+  },
+  {
+    "id": "defense-crusher",
+    "name": "Defense Crusher (Крушитель защиты)",
+    "ruName": "Крушитель защиты (Defense Crusher)",
+    "description": "Увеличивает наносимый импульс (Daze), силу атаки персонажей Нападения, а также дает огромный бонус к Крит. урону после применения Суперспособности.",
+    "favoredAttribute": [],
+    "favoredSpecialty": [
+      "Attack",
+      "Stun"
+    ],
+    "bonusMultiplier": 0.2
+  },
+  {
+    "id": "knife-edge",
+    "name": "Knife Edge (Лезвие клинка)",
+    "ruName": "Лезвие клинка (Knife Edge)",
+    "description": "Повышает защиту, усиливает урон Электро и Ветра после Особых атак, увеличивает импульс Особых атак устрашителей.",
+    "favoredAttribute": [
+      "Electric",
+      "Wind"
+    ],
+    "favoredSpecialty": [
+      "Stun"
+    ],
+    "bonusMultiplier": 0.2
+  },
+  {
+    "id": "disorder-storm",
+    "name": "Disorder Storm (Шторм хаоса)",
+    "ruName": "Шторм хаоса (Disorder Storm)",
+    "description": "Увеличивает урон Хаоса на 35% и ускоряет накопление аномалии при частой смене персонажей.",
+    "favoredAttribute": [],
+    "favoredSpecialty": [
+      "Anomaly",
+      "Support"
+    ],
+    "bonusMultiplier": 0.2
+  },
+  {
+    "id": "none",
+    "name": "None / Neutral (Без баффа)",
+    "ruName": "Без особого баффа",
+    "description": "Базовые условия боя без усилений этапа.",
+    "favoredAttribute": [],
+    "favoredSpecialty": [],
+    "bonusMultiplier": 0
+  }
+]

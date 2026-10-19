@@ -1,0 +1,1032 @@
+[
+  {
+    "id": "14150",
+    "name": "Angel in the Shell",
+    "zhName": "壳中之灵",
+    "rarity": "S",
+    "specialty": "Anomaly",
+    "attack": 713,
+    "subStat": "Anomaly Mastery",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/Limited_S_Rank/Angel_In_The_Shell.webp"
+  },
+  {
+    "id": "14130",
+    "name": "Bellicose Blaze",
+    "zhName": "嚣枪喧焰",
+    "rarity": "S",
+    "specialty": "Attack",
+    "attack": 713,
+    "subStat": "Energy Regen",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/Limited_S_Rank/Bellicose_Blaze.webp"
+  },
+  {
+    "id": "14116",
+    "name": "Blazing Laurel",
+    "zhName": "焰心桂冠",
+    "rarity": "S",
+    "specialty": "Stun",
+    "attack": 713,
+    "subStat": "Impact",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/Limited_S_Rank/Blazing_Laurel.webp"
+  },
+  {
+    "id": "14157",
+    "name": "Chief Sidekick",
+    "zhName": "首席跟班",
+    "rarity": "S",
+    "specialty": "Stun",
+    "attack": 713,
+    "subStat": "CRIT Rate",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/Standard_S_Rank/Hellfire_Gears.webp"
+  },
+  {
+    "id": "14143",
+    "name": "Cloudcleave Radiance",
+    "zhName": "云霓孤光",
+    "rarity": "S",
+    "specialty": "Attack",
+    "attack": 743,
+    "subStat": "CRIT DMG",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/Limited_S_Rank/Cloudcleave_Radiance.webp"
+  },
+  {
+    "id": "14146",
+    "name": "Cordis Germina",
+    "zhName": "机巧心种",
+    "rarity": "S",
+    "specialty": "Attack",
+    "attack": 713,
+    "subStat": "CRIT Rate",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/Limited_S_Rank/Cordis_Germina.webp"
+  },
+  {
+    "id": "14162",
+    "name": "Crimson Moon Casket",
+    "zhName": "绯月银棺",
+    "rarity": "S",
+    "specialty": "Stun",
+    "attack": 713,
+    "subStat": "Energy Regen",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/Limited_S_Rank/Crimson_Moon_Casket.webp"
+  },
+  {
+    "id": "14161",
+    "name": "Crimson Thirst",
+    "zhName": "猩红渴望",
+    "rarity": "S",
+    "specialty": "Armorer",
+    "attack": 431,
+    "subStat": "DEF",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/Limited_S_Rank/Crimson_Thirst.webp"
+  },
+  {
+    "id": "14119",
+    "name": "Deep Sea Visitor",
+    "zhName": "深海访客",
+    "rarity": "S",
+    "specialty": "Attack",
+    "attack": 713,
+    "subStat": "CRIT Rate",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/Limited_S_Rank/Deep_Sea_Visitor.webp"
+  },
+  {
+    "id": "14145",
+    "name": "Dreamlit Hearth",
+    "zhName": "铸梦炉歌",
+    "rarity": "S",
+    "specialty": "Support",
+    "attack": 713,
+    "subStat": "HP",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/Limited_S_Rank/Dreamlit_Hearth.webp"
+  },
+  {
+    "id": "14131",
+    "name": "Elegant Vanity",
+    "zhName": "玲珑妆匣",
+    "rarity": "S",
+    "specialty": "Support",
+    "attack": 713,
+    "subStat": "ATK",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/Limited_S_Rank/Elegant_Vanity.webp"
+  },
+  {
+    "id": "14117",
+    "name": "Flamemaker Shaker",
+    "zhName": "灼心摇壶",
+    "rarity": "S",
+    "specialty": "Anomaly",
+    "attack": 713,
+    "subStat": "ATK",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/Limited_S_Rank/Flamemaker_Shaker.webp"
+  },
+  {
+    "id": "14133",
+    "name": "Flight of Fancy",
+    "zhName": "飞鸟星梦",
+    "rarity": "S",
+    "specialty": "Anomaly",
+    "attack": 713,
+    "subStat": "Anomaly Proficiency",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/Limited_S_Rank/Flight_of_Fancy.webp"
+  },
+  {
+    "id": "14154",
+    "name": "Frostfall Sickle",
+    "zhName": "朔月裁霜",
+    "rarity": "S",
+    "specialty": "Anomaly",
+    "attack": 713,
+    "subStat": "Anomaly Mastery",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/Limited_S_Rank/Frostfall_Sickle.webp"
+  },
+  {
+    "id": "14118",
+    "name": "Fusion Compiler",
+    "zhName": "嵌合编译器",
+    "rarity": "S",
+    "specialty": "Anomaly",
+    "attack": 684,
+    "subStat": "PEN Ratio",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/Standard_S_Rank/Fusion_Compiler.webp"
+  },
+  {
+    "id": "14109",
+    "name": "Hailstorm Shrine",
+    "zhName": "霰落星殿",
+    "rarity": "S",
+    "specialty": "Anomaly",
+    "attack": 743,
+    "subStat": "CRIT Rate",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/Limited_S_Rank/Hailstorm_Shrine.webp"
+  },
+  {
+    "id": "14134",
+    "name": "Half-Sugar Bunny",
+    "zhName": "半糖雪兔",
+    "rarity": "S",
+    "specialty": "Defense",
+    "attack": 713,
+    "subStat": "HP",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/Limited_S_Rank/Half-Sugar_Bunny.webp"
+  },
+  {
+    "id": "14132",
+    "name": "Heartstring Nocturne",
+    "zhName": "心弦夜响",
+    "rarity": "S",
+    "specialty": "Attack",
+    "attack": 713,
+    "subStat": "CRIT Rate",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/Limited_S_Rank/Heartstring_Nocturne.webp"
+  },
+  {
+    "id": "14110",
+    "name": "Hellfire Gears",
+    "zhName": "燃狱齿轮",
+    "rarity": "S",
+    "specialty": "Stun",
+    "attack": 684,
+    "subStat": "Impact",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/Standard_S_Rank/Hellfire_Gears.webp"
+  },
+  {
+    "id": "14125",
+    "name": "Ice-Jade Teapot",
+    "zhName": "玉壶青冰",
+    "rarity": "S",
+    "specialty": "Stun",
+    "attack": 713,
+    "subStat": "Impact",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/Limited_S_Rank/Ice-Jade_Teapot.webp"
+  },
+  {
+    "id": "14163",
+    "name": "Incarcerating Grip",
+    "zhName": "禁罪囚笼",
+    "rarity": "S",
+    "specialty": "Attack",
+    "attack": 713,
+    "subStat": "CRIT Rate",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/Limited_S_Rank/Incarcerating_Grip.webp"
+  },
+  {
+    "id": "14156",
+    "name": "Joyau Dore",
+    "zhName": "琳琅鎏心",
+    "rarity": "S",
+    "specialty": "Anomaly",
+    "attack": 713,
+    "subStat": "Energy Regen",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/Limited_S_Rank/Joyau_Dore.webp"
+  },
+  {
+    "id": "14159",
+    "name": "Knight’s Extolment",
+    "zhName": "骁骑礼赞",
+    "rarity": "S",
+    "specialty": "Attack",
+    "attack": 713,
+    "subStat": "CRIT DMG",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/Limited_S_Rank/Knights_Extolment.webp"
+  },
+  {
+    "id": "14105",
+    "name": "Kraken's Cradle",
+    "zhName": "海妖摇篮",
+    "rarity": "S",
+    "specialty": "Rupture",
+    "attack": 713,
+    "subStat": "HP",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/Limited_S_Rank/Krakens_Cradle.webp"
+  },
+  {
+    "id": "14141",
+    "name": "Metanukimorphosis",
+    "zhName": "狸法七变化",
+    "rarity": "S",
+    "specialty": "Support",
+    "attack": 713,
+    "subStat": "Energy Regen",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/Limited_S_Rank/Metanukimorphosis.webp"
+  },
+  {
+    "id": "14129",
+    "name": "Myriad Eclipse",
+    "zhName": "千面日陨",
+    "rarity": "S",
+    "specialty": "Attack",
+    "attack": 713,
+    "subStat": "CRIT Rate",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/Limited_S_Rank/Myriad_Eclipse.webp"
+  },
+  {
+    "id": "14151",
+    "name": "Neon Fantasies",
+    "zhName": "霓虹妄想",
+    "rarity": "S",
+    "specialty": "Stun",
+    "attack": 713,
+    "subStat": "Anomaly Mastery",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/Limited_S_Rank/Neon_Fantasies.webp"
+  },
+  {
+    "id": "14158",
+    "name": "Ode of Resurrected Wings",
+    "zhName": "空羽复归之诗",
+    "rarity": "S",
+    "specialty": "Anomaly",
+    "attack": 743,
+    "subStat": "ATK",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/Limited_S_Rank/Ode_Of_Resurrected_Wings.webp"
+  },
+  {
+    "id": "14164",
+    "name": "Plume of Rebirth",
+    "zhName": "涅槃初翎",
+    "rarity": "S",
+    "specialty": "Anomaly",
+    "attack": 713,
+    "subStat": "Anomaly Mastery",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/Limited_S_Rank/Plume_Of_Rebirth.webp"
+  },
+  {
+    "id": "14140",
+    "name": "Practiced Perfection",
+    "zhName": "十方锻星",
+    "rarity": "S",
+    "specialty": "Anomaly",
+    "attack": 713,
+    "subStat": "ATK",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/Limited_S_Rank/Practiced_Perfection.webp"
+  },
+  {
+    "id": "14137",
+    "name": "Qingming Birdcage",
+    "zhName": "青溟笼舍",
+    "rarity": "S",
+    "specialty": "Rupture",
+    "attack": 743,
+    "subStat": "HP",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/Limited_S_Rank/Qingming_Birdcage.webp"
+  },
+  {
+    "id": "14124",
+    "name": "Riot Suppressor Mark VI",
+    "zhName": "防暴者Ⅵ型",
+    "rarity": "S",
+    "specialty": "Attack",
+    "attack": 713,
+    "subStat": "CRIT DMG",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/Limited_S_Rank/Riot_Suppressor_Mark_VI.webp"
+  },
+  {
+    "id": "14139",
+    "name": "Roaring Fur-nace",
+    "zhName": "福虓炉炉",
+    "rarity": "S",
+    "specialty": "Stun",
+    "attack": 713,
+    "subStat": "ATK",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/Standard_S_Rank/Hellfire_Gears.webp"
+  },
+  {
+    "id": "14152",
+    "name": "Serpentine Seeker",
+    "zhName": "鳞齿寻踪",
+    "rarity": "S",
+    "specialty": "Attack",
+    "attack": 713,
+    "subStat": "Energy Regen",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/Limited_S_Rank/Serpentine_Seeker.webp"
+  },
+  {
+    "id": "14138",
+    "name": "Severed Innocence",
+    "zhName": "牺牲洁纯",
+    "rarity": "S",
+    "specialty": "Attack",
+    "attack": 713,
+    "subStat": "CRIT DMG",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/Limited_S_Rank/Severed_Innocence.webp"
+  },
+  {
+    "id": "14126",
+    "name": "Sharpened Stinger",
+    "zhName": "淬锋钳刺",
+    "rarity": "S",
+    "specialty": "Anomaly",
+    "attack": 713,
+    "subStat": "Anomaly Proficiency",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/Limited_S_Rank/Sharpened_Stinger.webp"
+  },
+  {
+    "id": "14155",
+    "name": "Sol Exuvia",
+    "zhName": "日冕遗蜕",
+    "rarity": "S",
+    "specialty": "Attack",
+    "attack": 713,
+    "subStat": "CRIT DMG",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/Limited_S_Rank/Sol_Exuvia.webp"
+  },
+  {
+    "id": "14136",
+    "name": "Spectral Gaze",
+    "zhName": "索魂影眸",
+    "rarity": "S",
+    "specialty": "Stun",
+    "attack": 713,
+    "subStat": "CRIT Rate",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/Limited_S_Rank/Spectral_Gaze.webp"
+  },
+  {
+    "id": "14153",
+    "name": "Starlight Rider Faceplate",
+    "zhName": "辉骑面铠",
+    "rarity": "S",
+    "specialty": "Rupture",
+    "attack": 713,
+    "subStat": "HP",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/Limited_S_Rank/Starlight_Rider_Faceplate.webp"
+  },
+  {
+    "id": "14102",
+    "name": "Steel Cushion",
+    "zhName": "钢铁肉垫",
+    "rarity": "S",
+    "specialty": "Attack",
+    "attack": 684,
+    "subStat": "CRIT Rate",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/Standard_S_Rank/Steel_Cushion.webp"
+  },
+  {
+    "id": "14104",
+    "name": "The Brimstone",
+    "zhName": "硫磺石",
+    "rarity": "S",
+    "specialty": "Attack",
+    "attack": 684,
+    "subStat": "ATK",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/Standard_S_Rank/The_Brimstone.webp"
+  },
+  {
+    "id": "14114",
+    "name": "The Restrained",
+    "zhName": "拘缚者",
+    "rarity": "S",
+    "specialty": "Stun",
+    "attack": 684,
+    "subStat": "Impact",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/Standard_S_Rank/The_Restrained.webp"
+  },
+  {
+    "id": "14149",
+    "name": "Thoughtbop",
+    "zhName": "思络成歌",
+    "rarity": "S",
+    "specialty": "Support",
+    "attack": 713,
+    "subStat": "Energy Regen",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/Limited_S_Rank/Thoughtbop.webp"
+  },
+  {
+    "id": "14122",
+    "name": "Timeweaver",
+    "zhName": "时流贤者",
+    "rarity": "S",
+    "specialty": "Anomaly",
+    "attack": 713,
+    "subStat": "ATK",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/Limited_S_Rank/Timeweaver.webp"
+  },
+  {
+    "id": "14107",
+    "name": "Tusks of Fury",
+    "zhName": "奔袭獠牙",
+    "rarity": "S",
+    "specialty": "Defense",
+    "attack": 713,
+    "subStat": "Impact",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/Limited_S_Rank/Tusks_Of_Fury.webp"
+  },
+  {
+    "id": "14121",
+    "name": "Weeping Cradle",
+    "zhName": "啜泣摇篮",
+    "rarity": "S",
+    "specialty": "Support",
+    "attack": 684,
+    "subStat": "PEN Ratio",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/Standard_S_Rank/Weeping_Cradle.webp"
+  },
+  {
+    "id": "14147",
+    "name": "Wrathful Vajra",
+    "zhName": "怒目金刚",
+    "rarity": "S",
+    "specialty": "Rupture",
+    "attack": 713,
+    "subStat": "HP",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/Limited_S_Rank/Wrathful_Vajra.webp"
+  },
+  {
+    "id": "14148",
+    "name": "Yesterday Calls",
+    "zhName": "昨夜来电",
+    "rarity": "S",
+    "specialty": "Stun",
+    "attack": 713,
+    "subStat": "CRIT Rate",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/Limited_S_Rank/Yesterday_Calls.webp"
+  },
+  {
+    "id": "14120",
+    "name": "Zanshin Herb Case",
+    "zhName": "残心青囊",
+    "rarity": "S",
+    "specialty": "Attack",
+    "attack": 713,
+    "subStat": "CRIT DMG",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/Limited_S_Rank/Zanshin_Herb_Case.webp"
+  },
+  {
+    "id": "13113",
+    "name": "Bashful Demon",
+    "zhName": "含羞恶面",
+    "rarity": "A",
+    "specialty": "Support",
+    "attack": 624,
+    "subStat": "ATK",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/A_Rank/Bashful_Demon.webp"
+  },
+  {
+    "id": "13112",
+    "name": "Big Cylinder",
+    "zhName": "比格气缸",
+    "rarity": "A",
+    "specialty": "Defense",
+    "attack": 624,
+    "subStat": "DEF",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/A_Rank/Big_Cylinder.webp"
+  },
+  {
+    "id": "13021",
+    "name": "Bloodmarrow Coffer",
+    "zhName": "血髓秘匣",
+    "rarity": "A",
+    "specialty": "Armorer",
+    "attack": 356,
+    "subStat": "CRIT Rate",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/A_Rank/Bloodmarrow_Coffer.webp"
+  },
+  {
+    "id": "13018",
+    "name": "Boisterous Echoes",
+    "zhName": "咚哒回声",
+    "rarity": "A",
+    "specialty": "Anomaly",
+    "attack": 594,
+    "subStat": "Anomaly Proficiency",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/A_Rank/Boisterous_Echoes.webp"
+  },
+  {
+    "id": "13135",
+    "name": "Box Cutter",
+    "zhName": "裁纸刀",
+    "rarity": "A",
+    "specialty": "Stun",
+    "attack": 624,
+    "subStat": "Impact",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/A_Rank/Box_Cutter.webp"
+  },
+  {
+    "id": "13010",
+    "name": "Bunny Band",
+    "zhName": "兔能环",
+    "rarity": "A",
+    "specialty": "Defense",
+    "attack": 594,
+    "subStat": "DEF",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/A_Rank/Bunny_Band.webp"
+  },
+  {
+    "id": "13022",
+    "name": "Candlelit Scheme",
+    "zhName": "烛光诡计",
+    "rarity": "A",
+    "specialty": "Armorer",
+    "attack": 356,
+    "subStat": "DEF",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/A_Rank/Bashful_Demon.webp"
+  },
+  {
+    "id": "14001",
+    "name": "Cannon Rotor",
+    "zhName": "加农转子",
+    "rarity": "A",
+    "specialty": "Attack",
+    "attack": 594,
+    "subStat": "CRIT Rate",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/A_Rank/Cannon_Rotor.webp"
+  },
+  {
+    "id": "13017",
+    "name": "Catty Luck",
+    "zhName": "喵运当头",
+    "rarity": "A",
+    "specialty": "Armorer",
+    "attack": 356,
+    "subStat": "DEF",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/A_Rank/Catty_Luck.webp"
+  },
+  {
+    "id": "13019",
+    "name": "Cauldron of Clarity",
+    "zhName": "青漪灵鼎",
+    "rarity": "A",
+    "specialty": "Rupture",
+    "attack": 594,
+    "subStat": "HP",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/A_Rank/Cauldron_Of_Clarity.webp"
+  },
+  {
+    "id": "13101",
+    "name": "Demara Battery Mark II",
+    "zhName": "德玛拉电池Ⅱ型",
+    "rarity": "A",
+    "specialty": "Stun",
+    "attack": 624,
+    "subStat": "Impact",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/A_Rank/Demara_Battery_Mark_II.webp"
+  },
+  {
+    "id": "13111",
+    "name": "Drill Rig - Red Axis",
+    "zhName": "旋钻机-赤轴",
+    "rarity": "A",
+    "specialty": "Attack",
+    "attack": 624,
+    "subStat": "Energy Regen",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/A_Rank/Drill_Rig_Red-Axis.webp"
+  },
+  {
+    "id": "13009",
+    "name": "Electro-Lip Gloss",
+    "zhName": "触电唇彩",
+    "rarity": "A",
+    "specialty": "Anomaly",
+    "attack": 594,
+    "subStat": "Anomaly Proficiency",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/A_Rank/Electro_Lip_Gloss.webp"
+  },
+  {
+    "id": "13013",
+    "name": "Gilded Blossom",
+    "zhName": "鎏金花信",
+    "rarity": "A",
+    "specialty": "Attack",
+    "attack": 594,
+    "subStat": "ATK",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/A_Rank/Gilded_Blossom.webp"
+  },
+  {
+    "id": "13144",
+    "name": "Grill O'Wisp",
+    "zhName": "燔火胧夜",
+    "rarity": "A",
+    "specialty": "Rupture",
+    "attack": 624,
+    "subStat": "HP",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/A_Rank/Grill_O_Wisp.webp"
+  },
+  {
+    "id": "13106",
+    "name": "Housekeeper",
+    "zhName": "家政员",
+    "rarity": "A",
+    "specialty": "Attack",
+    "attack": 624,
+    "subStat": "ATK",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/A_Rank/Housekeeper.webp"
+  },
+  {
+    "id": "13115",
+    "name": "Kaboom the Cannon",
+    "zhName": "好斗的阿炮",
+    "rarity": "A",
+    "specialty": "Support",
+    "attack": 624,
+    "subStat": "Energy Regen",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/A_Rank/Kaboom_The_Cannon.webp"
+  },
+  {
+    "id": "13015",
+    "name": "Marcato Desire",
+    "zhName": "强音热望",
+    "rarity": "A",
+    "specialty": "Attack",
+    "attack": 594,
+    "subStat": "CRIT Rate",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/A_Rank/Marcato_Desire.webp"
+  },
+  {
+    "id": "13007",
+    "name": "Original Transmorpher",
+    "zhName": "正版变身器",
+    "rarity": "A",
+    "specialty": "Defense",
+    "attack": 594,
+    "subStat": "HP",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/A_Rank/Original_Transmorpher.webp"
+  },
+  {
+    "id": "13127",
+    "name": "Peacekeeper - Specialized",
+    "zhName": "维序者-特化型",
+    "rarity": "A",
+    "specialty": "Defense",
+    "attack": 624,
+    "subStat": "ATK",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/A_Rank/Peacekeeper_Specialized.webp"
+  },
+  {
+    "id": "13006",
+    "name": "Precious Fossilized Core",
+    "zhName": "贵重骨核",
+    "rarity": "A",
+    "specialty": "Stun",
+    "attack": 594,
+    "subStat": "Impact",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/A_Rank/Precious_Fossilized_Core.webp"
+  },
+  {
+    "id": "13012",
+    "name": "Puzzle Sphere",
+    "zhName": "幻变魔方",
+    "rarity": "A",
+    "specialty": "Rupture",
+    "attack": 594,
+    "subStat": "ATK",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/A_Rank/Puzzle_Sphere.webp"
+  },
+  {
+    "id": "13014",
+    "name": "Radiowave Journey",
+    "zhName": "电波漫步",
+    "rarity": "A",
+    "specialty": "Rupture",
+    "attack": 594,
+    "subStat": "HP",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/A_Rank/Radiowave_Journey.webp"
+  },
+  {
+    "id": "13003",
+    "name": "Rainforest Gourmet",
+    "zhName": "雨林饕客",
+    "rarity": "A",
+    "specialty": "Anomaly",
+    "attack": 594,
+    "subStat": "Anomaly Proficiency",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/A_Rank/Rainforest_Gourmet.webp"
+  },
+  {
+    "id": "13016",
+    "name": "Reel Projector",
+    "zhName": "光影刻刀",
+    "rarity": "A",
+    "specialty": "Defense",
+    "attack": 594,
+    "subStat": "Impact",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/A_Rank/Reel_Projector.webp"
+  },
+  {
+    "id": "13128",
+    "name": "Roaring Ride",
+    "zhName": "轰鸣座驾",
+    "rarity": "A",
+    "specialty": "Anomaly",
+    "attack": 624,
+    "subStat": "ATK",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/A_Rank/Roaring_Ride.webp"
+  },
+  {
+    "id": "14003",
+    "name": "Six Shooter",
+    "zhName": "左轮转子",
+    "rarity": "A",
+    "specialty": "Stun",
+    "attack": 594,
+    "subStat": "Impact",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/A_Rank/Six_Shooter.webp"
+  },
+  {
+    "id": "13002",
+    "name": "Slice of Time",
+    "zhName": "时光切片",
+    "rarity": "A",
+    "specialty": "Support",
+    "attack": 594,
+    "subStat": "PEN Ratio",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/A_Rank/Slice_Of_Time.webp"
+  },
+  {
+    "id": "13011",
+    "name": "Spring Embrace",
+    "zhName": "春日融融",
+    "rarity": "A",
+    "specialty": "Defense",
+    "attack": 594,
+    "subStat": "ATK",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/A_Rank/Spring_Embrace.webp"
+  },
+  {
+    "id": "13004",
+    "name": "Starlight Engine",
+    "zhName": "星徽引擎",
+    "rarity": "A",
+    "specialty": "Attack",
+    "attack": 594,
+    "subStat": "ATK",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/A_Rank/Starlight_Engine_Replica.webp"
+  },
+  {
+    "id": "13108",
+    "name": "Starlight Engine Replica",
+    "zhName": "仿制星徽引擎",
+    "rarity": "A",
+    "specialty": "Attack",
+    "attack": 624,
+    "subStat": "ATK",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/A_Rank/Starlight_Engine_Replica.webp"
+  },
+  {
+    "id": "13005",
+    "name": "Steam Oven",
+    "zhName": "人为刀俎",
+    "rarity": "A",
+    "specialty": "Stun",
+    "attack": 594,
+    "subStat": "Energy Regen",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/A_Rank/Steam_Oven.webp"
+  },
+  {
+    "id": "13001",
+    "name": "Street Superstar",
+    "zhName": "街头巨星",
+    "rarity": "A",
+    "specialty": "Attack",
+    "attack": 594,
+    "subStat": "ATK",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/A_Rank/Street_Superstar.webp"
+  },
+  {
+    "id": "13020",
+    "name": "The Simmering Pot",
+    "zhName": "炎炙沸釜",
+    "rarity": "A",
+    "specialty": "Stun",
+    "attack": 594,
+    "subStat": "Impact",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/A_Rank/The_Simmering_Pot.webp"
+  },
+  {
+    "id": "13103",
+    "name": "The Vault",
+    "zhName": "聚宝箱",
+    "rarity": "A",
+    "specialty": "Support",
+    "attack": 624,
+    "subStat": "Energy Regen",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/A_Rank/The_Vault.webp"
+  },
+  {
+    "id": "13142",
+    "name": "Tremor Trigram Vessel",
+    "zhName": "震元奇枢",
+    "rarity": "A",
+    "specialty": "Defense",
+    "attack": 624,
+    "subStat": "ATK",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/A_Rank/Tremor_Trigram_Vessel.webp"
+  },
+  {
+    "id": "14002",
+    "name": "Unfettered Game Ball",
+    "zhName": "逍遥游球",
+    "rarity": "A",
+    "specialty": "Support",
+    "attack": 594,
+    "subStat": "Energy Regen",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/A_Rank/Unfettered_Game_Ball.webp"
+  },
+  {
+    "id": "13008",
+    "name": "Weeping Gemini",
+    "zhName": "双生泣星",
+    "rarity": "A",
+    "specialty": "Anomaly",
+    "attack": 594,
+    "subStat": "ATK",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/A_Rank/Weeping_Gemini.webp"
+  },
+  {
+    "id": "12015",
+    "name": "[Cinder] Cobalt",
+    "zhName": "「灰烬」-钴蓝",
+    "rarity": "B",
+    "specialty": "Rupture",
+    "attack": 475,
+    "subStat": "HP",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/B_Rank/Cinder_Cobalt.webp"
+  },
+  {
+    "id": "12013",
+    "name": "[Identity] Base",
+    "zhName": "「恒等式」-本格",
+    "rarity": "B",
+    "specialty": "Defense",
+    "attack": 475,
+    "subStat": "DEF",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/B_Rank/Identity_Base.webp"
+  },
+  {
+    "id": "12014",
+    "name": "[Identity] Inflection",
+    "zhName": "「恒等式」-变格",
+    "rarity": "B",
+    "specialty": "Defense",
+    "attack": 475,
+    "subStat": "DEF",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/B_Rank/Identity_Inflection.webp"
+  },
+  {
+    "id": "12002",
+    "name": "[Lunar] Decrescent",
+    "zhName": "「月相」-晦",
+    "rarity": "B",
+    "specialty": "Attack",
+    "attack": 475,
+    "subStat": "ATK",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/A_Rank/Bashful_Demon.webp"
+  },
+  {
+    "id": "12003",
+    "name": "[Lunar] Noviluna",
+    "zhName": "「月相」-朔",
+    "rarity": "B",
+    "specialty": "Attack",
+    "attack": 475,
+    "subStat": "CRIT Rate",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/B_Rank/Lunar_Noviluna.webp"
+  },
+  {
+    "id": "12001",
+    "name": "[Lunar] Pleniluna",
+    "zhName": "「月相」-望",
+    "rarity": "B",
+    "specialty": "Attack",
+    "attack": 475,
+    "subStat": "ATK",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/B_Rank/Lunar_Pleniluna.webp"
+  },
+  {
+    "id": "12016",
+    "name": "[Lunar] Semiluna",
+    "zhName": "「月相」-弦",
+    "rarity": "B",
+    "specialty": "Armorer",
+    "attack": 282,
+    "subStat": "DEF",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/B_Rank/Lunar_Semiluna.webp"
+  },
+  {
+    "id": "12010",
+    "name": "[Magnetic Storm] Alpha",
+    "zhName": "「电磁暴」-壹式",
+    "rarity": "B",
+    "specialty": "Anomaly",
+    "attack": 475,
+    "subStat": "ATK",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/B_Rank/Magnetic_Storm_Alpha.webp"
+  },
+  {
+    "id": "12011",
+    "name": "[Magnetic Storm] Bravo",
+    "zhName": "「电磁暴」-贰式",
+    "rarity": "B",
+    "specialty": "Anomaly",
+    "attack": 475,
+    "subStat": "Anomaly Proficiency",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/B_Rank/Magnetic_Storm_Bravo.webp"
+  },
+  {
+    "id": "12012",
+    "name": "[Magnetic Storm] Charlie",
+    "zhName": "「电磁暴」-叁式",
+    "rarity": "B",
+    "specialty": "Anomaly",
+    "attack": 475,
+    "subStat": "PEN Ratio",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/B_Rank/Magnetic_Storm_Charlie.webp"
+  },
+  {
+    "id": "12004",
+    "name": "[Reverb] Mark I",
+    "zhName": "「残响」-Ⅰ型",
+    "rarity": "B",
+    "specialty": "Support",
+    "attack": 475,
+    "subStat": "ATK",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/B_Rank/Reverb_Mark_I.webp"
+  },
+  {
+    "id": "12005",
+    "name": "[Reverb] Mark II",
+    "zhName": "「残响」-Ⅱ型",
+    "rarity": "B",
+    "specialty": "Support",
+    "attack": 475,
+    "subStat": "Energy Regen",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/B_Rank/Reverb_Mark_I.webp"
+  },
+  {
+    "id": "12006",
+    "name": "[Reverb] Mark III",
+    "zhName": "「残响」-Ⅲ型",
+    "rarity": "B",
+    "specialty": "Support",
+    "attack": 475,
+    "subStat": "HP",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/B_Rank/Reverb_Mark_I.webp"
+  },
+  {
+    "id": "12008",
+    "name": "[Vortex] Arrow",
+    "zhName": "「湍流」-矢型",
+    "rarity": "B",
+    "specialty": "Stun",
+    "attack": 475,
+    "subStat": "Impact",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/B_Rank/Vortex_Arrow.png"
+  },
+  {
+    "id": "12009",
+    "name": "[Vortex] Hatchet",
+    "zhName": "「湍流」-斧型",
+    "rarity": "B",
+    "specialty": "Stun",
+    "attack": 475,
+    "subStat": "Energy Regen",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/B_Rank/Vortex_Hatchet.webp"
+  },
+  {
+    "id": "12007",
+    "name": "[Vortex] Revolver",
+    "zhName": "「湍流」-铳型",
+    "rarity": "B",
+    "specialty": "Stun",
+    "attack": 475,
+    "subStat": "ATK",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/w_engine_webp/B_Rank/Vortex_Revolver.webp"
+  }
+]

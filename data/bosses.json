@@ -1,0 +1,721 @@
+[
+  {
+    "id": "phaethon-of-the-scorched-horizon",
+    "name": "Phaethon of the Scorched Horizon",
+    "ruName": "Паэтон обожжённого горизонта",
+    "mode": "Deadly Assault",
+    "room": 1,
+    "weaknesses": [
+      "Ice",
+      "Wind"
+    ],
+    "resistances": [
+      "Physical"
+    ],
+    "mechanics": {
+      "type": "into_flames",
+      "title": "Gale Scorcher & Into Flames",
+      "description": "Босс вешает 5 стаков Into Flames (+урон босса, -крит. урон команды). Наложение Аномалий атрибута снимает стаки и кратно повышает урон Цветения (Abloom) и Хаоса (Disorder).",
+      "favoredSpecialty": [
+        "Anomaly"
+      ],
+      "favoredAttributes": [
+        "Ice",
+        "Wind"
+      ],
+      "penalizedAttributes": [
+        "Physical"
+      ],
+      "mechanicBonusAnomaly": 0.3,
+      "mechanicPenaltyCrit": -0.2
+    },
+    "targetScore": {
+      "sRank": 65000,
+      "full": 65000
+    },
+    "avgScore": 65000,
+    "topScore": 65000,
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/boss_webp/deadly_assault/Monster_HoloMutant.webp"
+  },
+  {
+    "id": "infernal-revenant",
+    "name": "Infernal Revenant",
+    "ruName": "Адский призрак (Ревенант)",
+    "mode": "Deadly Assault",
+    "room": 2,
+    "weaknesses": [
+      "Ice",
+      "Wind"
+    ],
+    "resistances": [
+      "Physical"
+    ],
+    "mechanics": {
+      "type": "infernal_state",
+      "title": "Infernal State & Rain of Fire",
+      "description": "Яростные атаки в Infernal State требуют Цепного парирования (Chain Parry). Огненный дождь наносит периодический урон отряду. Уничтожение 3 кристаллов кремня гасит огонь, дает щит и энергию.",
+      "favoredSpecialty": [
+        "Attack",
+        "Anomaly",
+        "Stun"
+      ],
+      "favoredAttributes": [
+        "Ice",
+        "Wind"
+      ],
+      "penalizedAttributes": [
+        "Physical"
+      ],
+      "mechanicBonusChainParry": 0.2,
+      "mechanicBonusIceFreeze": 0.15
+    },
+    "targetScore": {
+      "sRank": 65000,
+      "full": 65000
+    },
+    "avgScore": 65000,
+    "topScore": 65000,
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/boss_webp/deadly_assault/Monster_HollowVenger.webp"
+  },
+  {
+    "id": "kusarikku",
+    "name": "Kusarikku",
+    "ruName": "Кусарикку",
+    "mode": "Deadly Assault",
+    "room": 3,
+    "weaknesses": [
+      "Fire",
+      "Electric"
+    ],
+    "resistances": [
+      "Ice"
+    ],
+    "mechanics": {
+      "type": "corruptive_barrier",
+      "title": "Corruptive Barrier & Rift Assault",
+      "description": "Фиолетовый барьер замораживает набор очков. Босс имеет -40% входящего урона от чистой Аномалии. Защитная помощь (Defensive Assist) при атаках из порталов мгновенно крошит щит. После сбития щита/стана — окно взрывного урона.",
+      "favoredSpecialty": [
+        "Attack",
+        "Stun"
+      ],
+      "favoredAttributes": [
+        "Fire",
+        "Electric"
+      ],
+      "penalizedAttributes": [
+        "Ice"
+      ],
+      "mechanicBonusDefensiveAssist": 0.25,
+      "mechanicBonusStunBurst": 0.2,
+      "mechanicPenaltyPureAnomaly": -0.2,
+      "mechanicPenaltyIce": -0.25
+    },
+    "targetScore": {
+      "sRank": 65000,
+      "full": 65000
+    },
+    "avgScore": 65000,
+    "topScore": 65000,
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/boss_webp/deadly_assault/Monster_TyphonDestroyer.webp"
+  },
+  {
+    "id": "discordant-solo-vesper",
+    "name": "Discordant Solo - Vesper",
+    "ruName": "Дисгармоничное соло — Веспер",
+    "mode": "Deadly Assault",
+    "room": 1,
+    "weaknesses": [
+      "Ether"
+    ],
+    "resistances": [],
+    "mechanics": {
+      "type": "aerial_burst",
+      "title": "Sonic Distortions",
+      "description": "Уязвимость к Эфирному урону. Высокая мобильность, требует быстрого ошеломления.",
+      "favoredSpecialty": [
+        "Attack",
+        "Support"
+      ],
+      "favoredAttributes": [
+        "Ether"
+      ],
+      "penalizedAttributes": []
+    },
+    "targetScore": {
+      "sRank": 65000,
+      "full": 65000
+    },
+    "avgScore": 65000,
+    "topScore": 65000,
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/boss_webp/deadly_assault/Monster_Vesper.webp"
+  },
+  {
+    "id": "unknown-corruption-complex",
+    "name": "Unknown Corruption Complex",
+    "ruName": "Неизвестный комплекс заражения",
+    "mode": "Deadly Assault",
+    "room": 2,
+    "weaknesses": [
+      "Electric",
+      "Ether"
+    ],
+    "resistances": [],
+    "mechanics": {
+      "type": "construct_shields",
+      "title": "Corruption Core",
+      "description": "Огромная туша, уязвимая к Электро и Эфиру. Быстро оглушается устрашителями с последующим заливом урона.",
+      "favoredSpecialty": [
+        "Attack",
+        "Stun"
+      ],
+      "favoredAttributes": [
+        "Electric",
+        "Ether"
+      ],
+      "penalizedAttributes": []
+    },
+    "targetScore": {
+      "sRank": 65000,
+      "full": 65000
+    },
+    "avgScore": 65000,
+    "topScore": 65000,
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/boss_webp/deadly_assault/Monster_ComplexCorrupted.webp"
+  },
+  {
+    "id": "ye-shiyuan-the-thrall",
+    "name": "Ye Shiyuan the Thrall",
+    "ruName": "Е Шиюань Порабощённый",
+    "mode": "Deadly Assault",
+    "room": 3,
+    "weaknesses": [
+      "Ice",
+      "Physical"
+    ],
+    "resistances": [],
+    "mechanics": {
+      "type": "thrall_blade",
+      "title": "Furious Clashes",
+      "description": "Агрессивный мечник, слабый ко Льду и Физическому урону. Прекрасно контрится ледяными гиперкерри (Мияби, Эллен).",
+      "favoredSpecialty": [
+        "Attack",
+        "Anomaly"
+      ],
+      "favoredAttributes": [
+        "Ice",
+        "Physical"
+      ],
+      "penalizedAttributes": []
+    },
+    "targetScore": {
+      "sRank": 65000,
+      "full": 65000
+    },
+    "avgScore": 65000,
+    "topScore": 65000,
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/boss_webp/deadly_assault/Monster_YeShiyuanTheThrall.webp"
+  },
+  {
+    "id": "phaethon-of-the-scorched-horizon",
+    "name": "Phaethon of the Scorched Horizon",
+    "ruName": "Паэтон обожжённого горизонта",
+    "mode": "Deadly Assault",
+    "room": 1,
+    "weaknesses": [
+      "Ice",
+      "Wind"
+    ],
+    "resistances": [
+      "Physical"
+    ],
+    "mechanics": {
+      "type": "into_flames",
+      "title": "Gale Scorcher & Into Flames",
+      "description": "Босс вешает 5 стаков Into Flames (+урон босса, -крит. урон команды). Наложение Аномалий атрибута снимает стаки и кратно повышает урон Цветения (Abloom) и Хаоса (Disorder).",
+      "favoredSpecialty": [
+        "Anomaly"
+      ],
+      "favoredAttributes": [
+        "Ice",
+        "Wind"
+      ],
+      "penalizedAttributes": [
+        "Physical"
+      ],
+      "mechanicBonusAnomaly": 0.3,
+      "mechanicPenaltyCrit": -0.2
+    },
+    "targetScore": {
+      "sRank": 65000,
+      "full": 65000
+    },
+    "avgScore": 65000,
+    "topScore": 65000,
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/boss_webp/deadly_assault/Monster_HoloMutant.webp"
+  },
+  {
+    "id": "ye-shiyuan-the-thrall",
+    "name": "Ye Shiyuan the Thrall",
+    "ruName": "Е Шиюань Порабощённый",
+    "mode": "Deadly Assault",
+    "room": 3,
+    "weaknesses": [
+      "Ice",
+      "Physical"
+    ],
+    "resistances": [],
+    "mechanics": {
+      "type": "thrall_blade",
+      "title": "Furious Clashes",
+      "description": "Агрессивный мечник, слабый ко Льду и Физическому урону. Прекрасно контрится ледяными гиперкерри (Мияби, Эллен).",
+      "favoredSpecialty": [
+        "Attack",
+        "Anomaly"
+      ],
+      "favoredAttributes": [
+        "Ice",
+        "Physical"
+      ],
+      "penalizedAttributes": []
+    },
+    "targetScore": {
+      "sRank": 65000,
+      "full": 65000
+    },
+    "avgScore": 65000,
+    "topScore": 65000,
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/boss_webp/deadly_assault/Monster_YeShiyuanTheThrall.webp"
+  },
+  {
+    "id": "miasmic-fiend-unfathomable",
+    "name": "Miasmic Fiend: Unfathomable",
+    "ruName": "Миазматический демон: Непостижимый",
+    "mode": "Deadly Assault",
+    "weaknesses": [
+      "Electric",
+      "Ice"
+    ],
+    "resistances": [
+      "Fire"
+    ],
+    "mechanics": {
+      "type": "assault_boss",
+      "title": "Abyssal Fog & Miasma Surge",
+      "description": "Густой туман поглощает урон. Быстрое ошеломление электро-атаками сбивает призрачную форму.",
+      "favoredSpecialty": [
+        "Attack",
+        "Stun"
+      ],
+      "favoredAttributes": [
+        "Electric",
+        "Ice"
+      ],
+      "penalizedAttributes": [
+        "Fire"
+      ]
+    },
+    "targetScore": {
+      "sRank": 65000,
+      "full": 65000
+    },
+    "avgScore": 65000,
+    "topScore": 65000,
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/boss_webp/deadly_assault/Monster_NamelessOne_Unfathomable.webp"
+  },
+  {
+    "id": "kitabulu-stagnant-aberrant-beast",
+    "name": "Kitabulu, Stagnant Aberrant Beast",
+    "ruName": "Китабулу: Застойный аберрант",
+    "mode": "Deadly Assault",
+    "weaknesses": [
+      "Physical",
+      "Ether"
+    ],
+    "resistances": [
+      "Electric"
+    ],
+    "mechanics": {
+      "type": "assault_boss",
+      "title": "Stone Hide & Stagnation Pulse",
+      "description": "Тяжёлая каменная броня снижает обычный урон. Импульс тяжелых ударов крошит защиту.",
+      "favoredSpecialty": [
+        "Attack",
+        "Stun"
+      ],
+      "favoredAttributes": [
+        "Physical",
+        "Ether"
+      ],
+      "penalizedAttributes": [
+        "Electric"
+      ]
+    },
+    "targetScore": {
+      "sRank": 65000,
+      "full": 65000
+    },
+    "avgScore": 65000,
+    "topScore": 65000,
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/boss_webp/deadly_assault/Monster_Girtablu_HC.webp"
+  },
+  {
+    "id": "dead-end-butcher",
+    "name": "Dead End Butcher",
+    "ruName": "Мясник из Мёртвого тупика",
+    "mode": "Deadly Assault",
+    "weaknesses": [
+      "Fire",
+      "Physical"
+    ],
+    "resistances": [
+      "Ice"
+    ],
+    "mechanics": {
+      "type": "assault_boss",
+      "title": "Cleaver Frenzy & Seismic Slam",
+      "description": "Медленные, но сокрушительные взмахи тесаком. Огненные взрывы и парирования прерывают ярость.",
+      "favoredSpecialty": [
+        "Attack",
+        "Stun"
+      ],
+      "favoredAttributes": [
+        "Fire",
+        "Physical"
+      ],
+      "penalizedAttributes": [
+        "Ice"
+      ]
+    },
+    "targetScore": {
+      "sRank": 65000,
+      "full": 65000
+    },
+    "avgScore": 65000,
+    "topScore": 65000,
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/boss_webp/deadly_assault/Monster_Dead_End_Butcher.webp"
+  },
+  {
+    "id": "notorious-dead-end-butcher",
+    "name": "Notorious - Dead End Butcher",
+    "ruName": "Мясник из Мёртвого тупика (Особый)",
+    "mode": "Deadly Assault",
+    "weaknesses": [
+      "Fire",
+      "Physical"
+    ],
+    "resistances": [
+      "Ice"
+    ],
+    "mechanics": {
+      "type": "assault_boss",
+      "title": "Unstoppable Cleave",
+      "description": "Усиленная версия мясника с расширенными сериями ударов.",
+      "favoredSpecialty": [
+        "Attack",
+        "Stun"
+      ],
+      "favoredAttributes": [
+        "Fire",
+        "Physical"
+      ],
+      "penalizedAttributes": [
+        "Ice"
+      ]
+    },
+    "targetScore": {
+      "sRank": 65000,
+      "full": 65000
+    },
+    "avgScore": 65000,
+    "topScore": 65000,
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/boss_webp/deadly_assault/Monster_NotoriousDeadEndButcher.webp"
+  },
+  {
+    "id": "girtablullu",
+    "name": "Girtablullu",
+    "ruName": "Гиртаблуллу",
+    "mode": "Deadly Assault",
+    "weaknesses": [
+      "Physical",
+      "Ether"
+    ],
+    "resistances": [
+      "Electric"
+    ],
+    "mechanics": {
+      "type": "assault_boss",
+      "title": "Scorpion Shell & Stinger Barrage",
+      "description": "Хвост скорпиона поливает ядом. Физические дробящие удары взламывают хитин.",
+      "favoredSpecialty": [
+        "Attack",
+        "Anomaly"
+      ],
+      "favoredAttributes": [
+        "Physical",
+        "Ether"
+      ],
+      "penalizedAttributes": [
+        "Electric"
+      ]
+    },
+    "targetScore": {
+      "sRank": 65000,
+      "full": 65000
+    },
+    "avgScore": 65000,
+    "topScore": 65000,
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/boss_webp/deadly_assault/Monster_Girtablu.webp"
+  },
+  {
+    "id": "girtablullu-stagnant-aberrant",
+    "name": "Girtablullu - Stagnant Aberrant",
+    "ruName": "Гиртаблуллу: Застойный аберрант",
+    "mode": "Deadly Assault",
+    "weaknesses": [
+      "Physical",
+      "Ether"
+    ],
+    "resistances": [
+      "Electric"
+    ],
+    "mechanics": {
+      "type": "assault_boss",
+      "title": "Aberrant Carapace",
+      "description": "Усиленный панцирь. Эфирные аномалии и ошеломление лишают босса подвижности.",
+      "favoredSpecialty": [
+        "Attack",
+        "Anomaly"
+      ],
+      "favoredAttributes": [
+        "Physical",
+        "Ether"
+      ],
+      "penalizedAttributes": [
+        "Electric"
+      ]
+    },
+    "targetScore": {
+      "sRank": 65000,
+      "full": 65000
+    },
+    "avgScore": 65000,
+    "topScore": 65000,
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/boss_webp/deadly_assault/Monster_Girtablu_HC.webp"
+  },
+  {
+    "id": "primordial-nightmare-the-creator-",
+    "name": "Primordial Nightmare - \"The Creator\"",
+    "ruName": "Первородный кошмар — «Творец»",
+    "mode": "Deadly Assault",
+    "weaknesses": [
+      "Ether",
+      "Electric"
+    ],
+    "resistances": [
+      "Physical"
+    ],
+    "mechanics": {
+      "type": "assault_boss",
+      "title": "Reality Warp & Null Dimensions",
+      "description": "Искажение реальности. Эфирные всплески сбивают защитные сингулярности.",
+      "favoredSpecialty": [
+        "Anomaly",
+        "Support"
+      ],
+      "favoredAttributes": [
+        "Ether",
+        "Electric"
+      ],
+      "penalizedAttributes": [
+        "Physical"
+      ]
+    },
+    "targetScore": {
+      "sRank": 65000,
+      "full": 65000
+    },
+    "avgScore": 65000,
+    "topScore": 65000,
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/boss_webp/deadly_assault/Monster_Primordial_nightmare.webp"
+  },
+  {
+    "id": "miasma-priest",
+    "name": "Miasma Priest",
+    "ruName": "Жрец миазмов",
+    "mode": "Deadly Assault",
+    "weaknesses": [
+      "Electric",
+      "Ice"
+    ],
+    "resistances": [
+      "Physical"
+    ],
+    "mechanics": {
+      "type": "assault_boss",
+      "title": "Corrupt Ritual & Cursed Totems",
+      "description": "Босс призывает ритуальные тотемы. Уничтожение тотемов повергает жреца в стан.",
+      "favoredSpecialty": [
+        "Attack",
+        "Stun"
+      ],
+      "favoredAttributes": [
+        "Electric",
+        "Ice"
+      ],
+      "penalizedAttributes": [
+        "Physical"
+      ]
+    },
+    "targetScore": {
+      "sRank": 65000,
+      "full": 65000
+    },
+    "avgScore": 65000,
+    "topScore": 65000,
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/boss_webp/deadly_assault/Monster_MiasmaPriest.webp"
+  },
+  {
+    "id": "scorched-horizon",
+    "name": "Scorched Horizon",
+    "ruName": "Обожжённый горизонт",
+    "mode": "Deadly Assault",
+    "weaknesses": [
+      "Ice",
+      "Wind"
+    ],
+    "resistances": [
+      "Fire"
+    ],
+    "mechanics": {
+      "type": "assault_boss",
+      "title": "Blazing Trail",
+      "description": "Огненный фронт. Ледяные атаки гасят пламя.",
+      "favoredSpecialty": [
+        "Anomaly",
+        "Attack"
+      ],
+      "favoredAttributes": [
+        "Ice",
+        "Wind"
+      ],
+      "penalizedAttributes": [
+        "Fire"
+      ]
+    },
+    "targetScore": {
+      "sRank": 65000,
+      "full": 65000
+    },
+    "avgScore": 65000,
+    "topScore": 65000,
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/boss_webp/deadly_assault/Monster_HoloMutant.webp"
+  },
+  {
+    "id": "notorious-pompey",
+    "name": "Notorious - Pompey",
+    "ruName": "Помпей (Особый)",
+    "mode": "Deadly Assault",
+    "weaknesses": [
+      "Ice",
+      "Fire"
+    ],
+    "resistances": [
+      "Physical"
+    ],
+    "mechanics": {
+      "type": "assault_boss",
+      "title": "Biker Rampage",
+      "description": "Высокоскоростные заезды на мотоцикле. Требует точных таймингов уклонения.",
+      "favoredSpecialty": [
+        "Stun",
+        "Attack"
+      ],
+      "favoredAttributes": [
+        "Ice",
+        "Fire"
+      ],
+      "penalizedAttributes": [
+        "Physical"
+      ]
+    },
+    "targetScore": {
+      "sRank": 65000,
+      "full": 65000
+    },
+    "avgScore": 65000,
+    "topScore": 65000,
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/boss_webp/deadly_assault/Monster_NotoriousPompey.webp"
+  },
+  {
+    "id": "notorious-marionette",
+    "name": "Notorious - Marionette",
+    "ruName": "Марионетка-близнец (Особая)",
+    "mode": "Deadly Assault",
+    "weaknesses": [
+      "Ether",
+      "Electric"
+    ],
+    "resistances": [
+      "Fire"
+    ],
+    "mechanics": {
+      "type": "assault_boss",
+      "title": "Puppet Strings & Dual Dance",
+      "description": "Парный босс с разделением атак. Одновременный стан ускоряет залив урона.",
+      "favoredSpecialty": [
+        "Attack",
+        "Stun"
+      ],
+      "favoredAttributes": [
+        "Ether",
+        "Electric"
+      ],
+      "penalizedAttributes": [
+        "Fire"
+      ]
+    },
+    "targetScore": {
+      "sRank": 65000,
+      "full": 65000
+    },
+    "avgScore": 65000,
+    "topScore": 65000,
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/boss_webp/deadly_assault/Monster_NotoriousMarionette.webp"
+  },
+  {
+    "id": "the-defiler",
+    "name": "The Defiler",
+    "ruName": "Осквернитель",
+    "mode": "Deadly Assault",
+    "weaknesses": [
+      "Ether",
+      "Ice"
+    ],
+    "resistances": [
+      "Physical"
+    ],
+    "mechanics": {
+      "type": "assault_boss",
+      "title": "Defilement Aura",
+      "description": "Периодически отравляет эфиром. Ледяная заморозка останавливает касты.",
+      "favoredSpecialty": [
+        "Anomaly",
+        "Attack"
+      ],
+      "favoredAttributes": [
+        "Ether",
+        "Ice"
+      ],
+      "penalizedAttributes": [
+        "Physical"
+      ]
+    },
+    "targetScore": {
+      "sRank": 65000,
+      "full": 65000
+    },
+    "avgScore": 65000,
+    "topScore": 65000,
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/boss_webp/deadly_assault/Monster_IsoldetheDefiler.webp"
+  }
+]

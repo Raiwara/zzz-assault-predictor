@@ -1,0 +1,1721 @@
+{
+  "id": "cmscfm22b0001jkvtw9jdsaip",
+  "name": "Nexus | Assault Classic",
+  "description": "Nexus Tournament Assault Classic Cost System (individual agent & amplifier power rating)",
+  "syncedAt": "2026-10-18T14:54:45.291Z",
+  "characterCosts": {
+    "Rina": {
+      "name": "Rina",
+      "ruName": "Рина",
+      "rank": "S",
+      "standard": true,
+      "mindscapes": {
+        "M0": 60,
+        "M1": 80,
+        "M2": 80,
+        "M3": 80
+      }
+    },
+    "Alice": {
+      "name": "Alice",
+      "ruName": "Элис",
+      "rank": "S",
+      "standard": false,
+      "mindscapes": {
+        "M0": 20,
+        "M1": 40,
+        "M2": 145
+      }
+    },
+    "Anby": {
+      "name": "Anby",
+      "ruName": "Энби",
+      "rank": "A",
+      "standard": false,
+      "mindscapes": {
+        "M0": 5,
+        "M1": 5,
+        "M2": 5,
+        "M3": 5
+      }
+    },
+    "Anton": {
+      "name": "Anton",
+      "ruName": "Антон",
+      "rank": "A",
+      "standard": false,
+      "mindscapes": {
+        "M0": 5,
+        "M1": 5,
+        "M2": 5,
+        "M3": 5
+      }
+    },
+    "Aria": {
+      "name": "Aria",
+      "ruName": "Ария",
+      "rank": "S",
+      "standard": false,
+      "mindscapes": {
+        "M0": 105,
+        "M1": 220,
+        "M2": 300
+      }
+    },
+    "Harumasa": {
+      "name": "Harumasa",
+      "ruName": "Харумаса",
+      "rank": "S",
+      "standard": false,
+      "mindscapes": {
+        "M0": 40,
+        "M1": 125,
+        "M2": 190,
+        "M3": 260
+      }
+    },
+    "Astra Yao": {
+      "name": "Astra Yao",
+      "ruName": "Астра Яо",
+      "rank": "S",
+      "standard": false,
+      "mindscapes": {
+        "M0": 70,
+        "M1": 180,
+        "M2": 240
+      }
+    },
+    "Banyue": {
+      "name": "Banyue",
+      "ruName": "Баньюэ",
+      "rank": "S",
+      "standard": false,
+      "mindscapes": {
+        "M0": 10,
+        "M1": 55,
+        "M2": 105
+      }
+    },
+    "Ben": {
+      "name": "Ben",
+      "ruName": "Бен",
+      "rank": "A",
+      "standard": false,
+      "mindscapes": {
+        "M0": 5,
+        "M1": 5,
+        "M2": 5,
+        "M3": 5
+      }
+    },
+    "Billy": {
+      "name": "Billy",
+      "ruName": "Билли",
+      "rank": "A",
+      "standard": false,
+      "mindscapes": {
+        "M0": 5,
+        "M1": 5,
+        "M2": 5,
+        "M3": 5
+      }
+    },
+    "Burnice": {
+      "name": "Burnice",
+      "ruName": "Бёрнис",
+      "rank": "S",
+      "standard": false,
+      "mindscapes": {
+        "M0": 85,
+        "M1": 100,
+        "M2": 190
+      }
+    },
+    "Caesar": {
+      "name": "Caesar",
+      "ruName": "Цезарь",
+      "rank": "S",
+      "standard": false,
+      "mindscapes": {
+        "M0": 5,
+        "M1": 50,
+        "M2": 120,
+        "M3": 125
+      }
+    },
+    "Cissia": {
+      "name": "Cissia",
+      "ruName": "Циссия",
+      "rank": "S",
+      "standard": false,
+      "mindscapes": {
+        "M0": 190,
+        "M1": 290,
+        "M2": 390
+      }
+    },
+    "Corin": {
+      "name": "Corin",
+      "ruName": "Корин",
+      "rank": "A",
+      "standard": false,
+      "mindscapes": {
+        "M0": 5,
+        "M1": 5,
+        "M2": 5,
+        "M3": 5
+      }
+    },
+    "Dialyn": {
+      "name": "Dialyn",
+      "ruName": "Диалинь",
+      "rank": "S",
+      "standard": false,
+      "mindscapes": {
+        "M0": 200,
+        "M1": 325,
+        "M2": 425
+      }
+    },
+    "Ellen": {
+      "name": "Ellen",
+      "ruName": "Эллен",
+      "rank": "S",
+      "standard": false,
+      "mindscapes": {
+        "M0": 60,
+        "M1": 65,
+        "M2": 85
+      }
+    },
+    "Evelyn": {
+      "name": "Evelyn",
+      "ruName": "Эвелин",
+      "rank": "S",
+      "standard": false,
+      "mindscapes": {
+        "M0": 75,
+        "M1": 125,
+        "M2": 185
+      }
+    },
+    "Grace": {
+      "name": "Grace",
+      "ruName": "Грейс",
+      "rank": "S",
+      "standard": true,
+      "mindscapes": {
+        "M0": 30,
+        "M1": 30,
+        "M2": 70,
+        "M3": 70
+      }
+    },
+    "Miyabi": {
+      "name": "Miyabi",
+      "ruName": "Мияби",
+      "rank": "S",
+      "standard": false,
+      "mindscapes": {
+        "M0": 100,
+        "M1": 200,
+        "M2": 300
+      }
+    },
+    "Hugo": {
+      "name": "Hugo",
+      "ruName": "Хуго",
+      "rank": "S",
+      "standard": false,
+      "mindscapes": {
+        "M0": 10,
+        "M1": 30,
+        "M2": 120
+      }
+    },
+    "Jane": {
+      "name": "Jane",
+      "ruName": "Джейн",
+      "rank": "S",
+      "standard": false,
+      "mindscapes": {
+        "M0": 10,
+        "M1": 20,
+        "M2": 90,
+        "M3": 95
+      }
+    },
+    "Ju Fufu": {
+      "name": "Ju Fufu",
+      "ruName": "Цзюй Фуфу",
+      "rank": "S",
+      "standard": false,
+      "mindscapes": {
+        "M0": 65,
+        "M1": 195,
+        "M2": 250
+      }
+    },
+    "Koleda": {
+      "name": "Koleda",
+      "ruName": "Коляда",
+      "rank": "S",
+      "standard": true,
+      "mindscapes": {
+        "M0": 35,
+        "M1": 35,
+        "M2": 80,
+        "M3": 90
+      }
+    },
+    "Komano Manato": {
+      "name": "Komano Manato",
+      "ruName": "Манато",
+      "rank": "A",
+      "standard": false,
+      "mindscapes": {
+        "M0": 5,
+        "M1": 5,
+        "M2": 5,
+        "M3": 5
+      }
+    },
+    "Lighter": {
+      "name": "Lighter",
+      "ruName": "Лайтер",
+      "rank": "S",
+      "standard": false,
+      "mindscapes": {
+        "M0": 85,
+        "M1": 160,
+        "M2": 260
+      }
+    },
+    "Lucia": {
+      "name": "Lucia",
+      "ruName": "Люсия",
+      "rank": "S",
+      "standard": false,
+      "mindscapes": {
+        "M0": 5,
+        "M1": 5,
+        "M2": 5,
+        "M3": 5
+      }
+    },
+    "Nangong Yu": {
+      "name": "Nangong Yu",
+      "ruName": "Наньгун Юй",
+      "rank": "S",
+      "standard": false,
+      "mindscapes": {
+        "M0": 185,
+        "M1": 300,
+        "M2": 400
+      }
+    },
+    "Nekomata": {
+      "name": "Nekomata",
+      "ruName": "Нэкомата",
+      "rank": "S",
+      "standard": true,
+      "mindscapes": {
+        "M0": 30,
+        "M1": 65,
+        "M2": 65,
+        "M3": 110
+      }
+    },
+    "Nicole": {
+      "name": "Nicole",
+      "ruName": "Николь",
+      "rank": "A",
+      "standard": false,
+      "mindscapes": {
+        "M0": 15,
+        "M1": 15,
+        "M2": 15,
+        "M3": 15
+      }
+    },
+    "Norma": {
+      "name": "Norma",
+      "ruName": "Норма",
+      "rank": "S",
+      "standard": false,
+      "mindscapes": {
+        "M0": 200,
+        "M1": 325,
+        "M2": 425
+      }
+    },
+    "Orphie & Magus": {
+      "name": "Orphie & Magus",
+      "ruName": "Орфея и Магус",
+      "rank": "S",
+      "standard": false,
+      "mindscapes": {
+        "M0": 45,
+        "M1": 145,
+        "M2": 245
+      }
+    },
+    "Pan Yinhu": {
+      "name": "Pan Yinhu",
+      "ruName": "Пань Иньху",
+      "rank": "A",
+      "standard": false,
+      "mindscapes": {
+        "M0": 5,
+        "M1": 5,
+        "M2": 5,
+        "M3": 5
+      }
+    },
+    "Piper": {
+      "name": "Piper",
+      "ruName": "Пайпер",
+      "rank": "A",
+      "standard": false,
+      "mindscapes": {
+        "M0": 5,
+        "M1": 5,
+        "M2": 5,
+        "M3": 5
+      }
+    },
+    "Promeia": {
+      "name": "Promeia",
+      "ruName": "Промея",
+      "rank": "S",
+      "standard": false,
+      "mindscapes": {
+        "M0": 210,
+        "M1": 310,
+        "M2": 410
+      }
+    },
+    "Pulchra": {
+      "name": "Pulchra",
+      "ruName": "Пульхра",
+      "rank": "A",
+      "standard": false,
+      "mindscapes": {
+        "M0": 5,
+        "M1": 5,
+        "M2": 5,
+        "M3": 5
+      }
+    },
+    "Pyrois": {
+      "name": "Pyrois",
+      "ruName": "Пироис",
+      "rank": "S",
+      "standard": false,
+      "mindscapes": {
+        "M0": 140,
+        "M1": 140,
+        "M2": 140,
+        "M3": 140
+      }
+    },
+    "Qingyi": {
+      "name": "Qingyi",
+      "ruName": "Цинъи",
+      "rank": "S",
+      "standard": false,
+      "mindscapes": {
+        "M0": 20,
+        "M1": 90,
+        "M2": 165
+      }
+    },
+    "Seed": {
+      "name": "Seed",
+      "ruName": "Сид",
+      "rank": "S",
+      "standard": false,
+      "mindscapes": {
+        "M0": 60,
+        "M1": 150,
+        "M2": 240
+      }
+    },
+    "Seth": {
+      "name": "Seth",
+      "ruName": "Сет",
+      "rank": "A",
+      "standard": false,
+      "mindscapes": {
+        "M0": 5,
+        "M1": 5,
+        "M2": 5,
+        "M3": 5
+      }
+    },
+    "Soldier 0 - Anby": {
+      "name": "Soldier 0 - Anby",
+      "ruName": "Солдат 0 Энби",
+      "rank": "S",
+      "standard": false,
+      "mindscapes": {
+        "M0": 50,
+        "M1": 50,
+        "M2": 70,
+        "M3": 115
+      }
+    },
+    "Soukaku": {
+      "name": "Soukaku",
+      "ruName": "Сокаку",
+      "rank": "A",
+      "standard": false,
+      "mindscapes": {
+        "M0": 5,
+        "M1": 5,
+        "M2": 5,
+        "M3": 5
+      }
+    },
+    "Starlight - Billy": {
+      "name": "Starlight - Billy",
+      "ruName": "Звёздный Билли",
+      "rank": "S",
+      "standard": false,
+      "mindscapes": {
+        "M0": 35,
+        "M1": 125,
+        "M2": 215
+      }
+    },
+    "Sunna": {
+      "name": "Sunna",
+      "ruName": "Санна",
+      "rank": "S",
+      "standard": false,
+      "mindscapes": {
+        "M0": 120,
+        "M1": 220,
+        "M2": 320
+      }
+    },
+    "Trigger": {
+      "name": "Trigger",
+      "ruName": "Гашетка",
+      "rank": "S",
+      "standard": false,
+      "mindscapes": {
+        "M0": 45,
+        "M1": 180,
+        "M2": 230
+      }
+    },
+    "Yanagi": {
+      "name": "Yanagi",
+      "ruName": "Янаги",
+      "rank": "S",
+      "standard": false,
+      "mindscapes": {
+        "M0": 110,
+        "M1": 190,
+        "M2": 250,
+        "M3": 260
+      }
+    },
+    "Yuzuha": {
+      "name": "Yuzuha",
+      "ruName": "Юдзуха",
+      "rank": "S",
+      "standard": false,
+      "mindscapes": {
+        "M0": 155,
+        "M1": 255,
+        "M2": 355
+      }
+    },
+    "Velina": {
+      "name": "Velina",
+      "ruName": "Велина",
+      "rank": "S",
+      "standard": false,
+      "mindscapes": {
+        "M0": 265,
+        "M1": 380,
+        "M2": 530
+      }
+    },
+    "Vivian": {
+      "name": "Vivian",
+      "ruName": "Вивиан",
+      "rank": "S",
+      "standard": false,
+      "mindscapes": {
+        "M0": 45,
+        "M1": 175,
+        "M2": 275
+      }
+    },
+    "Lycaon": {
+      "name": "Lycaon",
+      "ruName": "Ликаон",
+      "rank": "S",
+      "standard": true,
+      "mindscapes": {
+        "M0": 90,
+        "M1": 95,
+        "M2": 95,
+        "M3": 100
+      }
+    },
+    "Ye Shunguang": {
+      "name": "Ye Shunguang",
+      "ruName": "Е Шуньгуан",
+      "rank": "S",
+      "standard": false,
+      "mindscapes": {
+        "M0": 170,
+        "M1": 285,
+        "M2": 400
+      }
+    },
+    "Yidhari": {
+      "name": "Yidhari",
+      "ruName": "Йидхари",
+      "rank": "S",
+      "standard": false,
+      "mindscapes": {
+        "M0": 55,
+        "M1": 140,
+        "M2": 225
+      }
+    },
+    "Yixuan": {
+      "name": "Yixuan",
+      "ruName": "Исюань",
+      "rank": "S",
+      "standard": false,
+      "mindscapes": {
+        "M0": 35,
+        "M1": 125,
+        "M2": 215
+      }
+    },
+    "Zhao": {
+      "name": "Zhao",
+      "ruName": "Чжао",
+      "rank": "S",
+      "standard": false,
+      "mindscapes": {
+        "M0": 50,
+        "M1": 150,
+        "M2": 250
+      }
+    },
+    "Zhu Yuan": {
+      "name": "Zhu Yuan",
+      "ruName": "Чжу Юань",
+      "rank": "S",
+      "standard": false,
+      "mindscapes": {
+        "M0": 5,
+        "M1": 10,
+        "M2": 20,
+        "M3": 25
+      }
+    },
+    "Remielle": {
+      "name": "Remielle",
+      "ruName": "Ремиэлла",
+      "rank": "S",
+      "standard": false,
+      "mindscapes": {
+        "M0": 265,
+        "M1": 500,
+        "M2": 800
+      }
+    },
+    "Sigrid": {
+      "name": "Sigrid",
+      "ruName": "Сигрид",
+      "rank": "S",
+      "standard": false,
+      "mindscapes": {
+        "M0": 240,
+        "M1": 350,
+        "M2": 460
+      }
+    },
+    "Claret": {
+      "name": "Claret",
+      "ruName": "Кларет",
+      "rank": "S",
+      "standard": false,
+      "mindscapes": {
+        "M0": 260,
+        "M1": 380,
+        "M2": 500
+      }
+    },
+    "Roxy": {
+      "name": "Roxy",
+      "ruName": "Рокси",
+      "rank": "S",
+      "standard": false,
+      "mindscapes": {
+        "M0": 200,
+        "M1": 325,
+        "M2": 425
+      }
+    },
+    "Severian": {
+      "name": "Severian",
+      "ruName": "Севериан Лоуэлл",
+      "rank": "S",
+      "standard": false,
+      "mindscapes": {}
+    },
+    "Phoenix": {
+      "name": "Phoenix",
+      "ruName": "Феникс",
+      "rank": "S",
+      "standard": false,
+      "mindscapes": {}
+    },
+    "Tung Tung Tung Sahur": {
+      "name": "Tung Tung Tung Sahur",
+      "ruName": "Тун Тун Тун Сахур",
+      "rank": "S",
+      "standard": false,
+      "mindscapes": {}
+    }
+  },
+  "baseAmplifierCosts": {
+    "Angel in the Shell": {
+      "name": "Angel in the Shell",
+      "ruName": "Душа в доспехах",
+      "rank": "S",
+      "ranks": {
+        "R1": 5,
+        "R2": 10,
+        "R3": 15
+      }
+    },
+    "Bellicose Blaze": {
+      "name": "Bellicose Blaze",
+      "ruName": "Пламя брани",
+      "rank": "S",
+      "ranks": {
+        "R1": 5,
+        "R2": 10,
+        "R3": 15
+      }
+    },
+    "Blazing Laurel": {
+      "name": "Blazing Laurel",
+      "ruName": "Пламенный венец",
+      "rank": "S",
+      "ranks": {
+        "R1": 10,
+        "R2": 15,
+        "R3": 20
+      }
+    },
+    "Chief Sidekick": {
+      "name": "Chief Sidekick",
+      "ruName": "Старший ассистент",
+      "rank": "S",
+      "ranks": {
+        "R1": 5,
+        "R2": 10,
+        "R3": 15
+      }
+    },
+    "Cloudcleave Radiance": {
+      "name": "Cloudcleave Radiance",
+      "ruName": "Проблеск в облаках",
+      "rank": "S",
+      "ranks": {
+        "R1": 5,
+        "R2": 10,
+        "R3": 15
+      }
+    },
+    "Cordis Germina": {
+      "name": "Cordis Germina",
+      "ruName": "Рукотворное сердце",
+      "rank": "S",
+      "ranks": {
+        "R1": 5,
+        "R2": 10,
+        "R3": 15
+      }
+    },
+    "Deep Sea Visitor": {
+      "name": "Deep Sea Visitor",
+      "ruName": "Гость из глубин",
+      "rank": "S",
+      "ranks": {
+        "R1": 5,
+        "R2": 10,
+        "R3": 15
+      }
+    },
+    "Dreamlit Hearth": {
+      "name": "Dreamlit Hearth",
+      "ruName": "Очаг грёз",
+      "rank": "S",
+      "ranks": {
+        "R1": 5,
+        "R2": 10,
+        "R3": 15
+      }
+    },
+    "Elegant Vanity": {
+      "name": "Elegant Vanity",
+      "ruName": "Стильная штучка",
+      "rank": "S",
+      "ranks": {
+        "R1": 5,
+        "R2": 10,
+        "R3": 15
+      }
+    },
+    "Flamemaker Shaker": {
+      "name": "Flamemaker Shaker",
+      "ruName": "Шейкер-огнемейкер",
+      "rank": "S",
+      "ranks": {
+        "R1": 5,
+        "R2": 5,
+        "R3": 10,
+        "R4": 15,
+        "R5": 20
+      }
+    },
+    "Flight of Fancy": {
+      "name": "Flight of Fancy",
+      "ruName": "Полёт среди грёз",
+      "rank": "S",
+      "ranks": {
+        "R1": 5,
+        "R2": 10,
+        "R3": 15
+      }
+    },
+    "Frostfall Sickle": {
+      "name": "Frostfall Sickle",
+      "ruName": "Ледяное новолуние",
+      "rank": "S",
+      "ranks": {
+        "R1": 5,
+        "R2": 10,
+        "R3": 15
+      }
+    },
+    "Fusion Compiler": {
+      "name": "Fusion Compiler",
+      "ruName": "Встроенный компилятор",
+      "rank": "S",
+      "ranks": {
+        "R1": 0,
+        "R2": 0,
+        "R3": 5,
+        "R4": 10,
+        "R5": 15
+      }
+    },
+    "Hailstorm Shrine": {
+      "name": "Hailstorm Shrine",
+      "ruName": "Храм вьюги",
+      "rank": "S",
+      "ranks": {
+        "R1": 5,
+        "R2": 10,
+        "R3": 15
+      }
+    },
+    "Half-Sugar Bunny": {
+      "name": "Half-Sugar Bunny",
+      "ruName": "Сладковатая зайка",
+      "rank": "S",
+      "ranks": {
+        "R1": 5,
+        "R2": 10,
+        "R3": 15
+      }
+    },
+    "Heartstring Nocturne": {
+      "name": "Heartstring Nocturne",
+      "ruName": "Струны ночи",
+      "rank": "S",
+      "ranks": {
+        "R1": 5,
+        "R2": 10,
+        "R3": 15
+      }
+    },
+    "Hellfire Gears": {
+      "name": "Hellfire Gears",
+      "ruName": "Шестерни адского пламени",
+      "rank": "S",
+      "ranks": {
+        "R1": 0,
+        "R2": 0,
+        "R3": 0,
+        "R4": 5,
+        "R5": 10
+      }
+    },
+    "Ice-Jade Teapot": {
+      "name": "Ice-Jade Teapot",
+      "ruName": "Чайник нефритовой чистоты",
+      "rank": "S",
+      "ranks": {
+        "R1": 5,
+        "R2": 5,
+        "R3": 10,
+        "R4": 15,
+        "R5": 20
+      }
+    },
+    "Joyau Dore": {
+      "name": "Joyau Dore",
+      "ruName": "Драгоценная прохлада",
+      "rank": "S",
+      "ranks": {
+        "R1": 10,
+        "R2": 15,
+        "R3": 20
+      }
+    },
+    "Kraken's Cradle": {
+      "name": "Kraken's Cradle",
+      "ruName": "Колыбель кракена",
+      "rank": "S",
+      "ranks": {
+        "R1": 5,
+        "R2": 10,
+        "R3": 15
+      }
+    },
+    "Metanukimorphosis": {
+      "name": "Metanukimorphosis",
+      "ruName": "Семь уловок тануки",
+      "rank": "S",
+      "ranks": {
+        "R1": 0,
+        "R2": 5,
+        "R3": 10
+      }
+    },
+    "Myriad Eclipse": {
+      "name": "Myriad Eclipse",
+      "ruName": "Тысяча затмений",
+      "rank": "S",
+      "ranks": {
+        "R1": 5,
+        "R2": 10,
+        "R3": 15
+      }
+    },
+    "Neon Fantasies": {
+      "name": "Neon Fantasies",
+      "ruName": "Неоновое наваждение",
+      "rank": "S",
+      "ranks": {
+        "R1": 5,
+        "R2": 10,
+        "R3": 15
+      }
+    },
+    "Practiced Perfection": {
+      "name": "Practiced Perfection",
+      "ruName": "Всесторонняя отточенность",
+      "rank": "S",
+      "ranks": {
+        "R1": 5,
+        "R2": 10,
+        "R3": 15
+      }
+    },
+    "Qingming Birdcage": {
+      "name": "Qingming Birdcage",
+      "ruName": "Клетка Небесной птицы",
+      "rank": "S",
+      "ranks": {
+        "R1": 5,
+        "R2": 10,
+        "R3": 15
+      }
+    },
+    "Riot Suppressor Mark VI": {
+      "name": "Riot Suppressor Mark VI",
+      "ruName": "Усмиритель беспорядков VI",
+      "rank": "S",
+      "ranks": {
+        "R1": 5,
+        "R2": 10,
+        "R3": 15
+      }
+    },
+    "Roaring Fur-nace": {
+      "name": "Roaring Fur-nace",
+      "ruName": "Вместилище фурчаний",
+      "rank": "S",
+      "ranks": {
+        "R1": 5,
+        "R2": 10,
+        "R3": 15
+      }
+    },
+    "Serpentine Seeker": {
+      "name": "Serpentine Seeker",
+      "ruName": "Рептилокатор",
+      "rank": "S",
+      "ranks": {
+        "R1": 5,
+        "R2": 10,
+        "R3": 15
+      }
+    },
+    "Severed Innocence": {
+      "name": "Severed Innocence",
+      "ruName": "Чистота утраты",
+      "rank": "S",
+      "ranks": {
+        "R1": 5,
+        "R2": 10,
+        "R3": 15
+      }
+    },
+    "Sharpened Stinger": {
+      "name": "Sharpened Stinger",
+      "ruName": "Заострённые шипы",
+      "rank": "S",
+      "ranks": {
+        "R1": 5,
+        "R2": 5,
+        "R3": 10,
+        "R4": 15,
+        "R5": 20
+      }
+    },
+    "Sol Exuvia": {
+      "name": "Sol Exuvia",
+      "ruName": "Солярный экзувий",
+      "rank": "S",
+      "ranks": {
+        "R1": 5,
+        "R2": 5,
+        "R3": 5,
+        "R4": 5,
+        "R5": 5
+      }
+    },
+    "Spectral Gaze": {
+      "name": "Spectral Gaze",
+      "ruName": "Призрачный взор",
+      "rank": "S",
+      "ranks": {
+        "R1": 0
+      }
+    },
+    "Starlight Rider Faceplate": {
+      "name": "Starlight Rider Faceplate",
+      "ruName": "Звёздное забрало",
+      "rank": "S",
+      "ranks": {
+        "R1": 5,
+        "R2": 10,
+        "R3": 15
+      }
+    },
+    "Steel Cushion": {
+      "name": "Steel Cushion",
+      "ruName": "Стальная лапа",
+      "rank": "S",
+      "ranks": {
+        "R1": 0,
+        "R2": 0,
+        "R3": 5,
+        "R4": 5,
+        "R5": 10
+      }
+    },
+    "The Brimstone": {
+      "name": "The Brimstone",
+      "ruName": "Сера",
+      "rank": "S",
+      "ranks": {
+        "R1": 0,
+        "R2": 0,
+        "R3": 5,
+        "R4": 5,
+        "R5": 10
+      }
+    },
+    "The Restrained": {
+      "name": "The Restrained",
+      "ruName": "Сдержанность",
+      "rank": "S",
+      "ranks": {
+        "R1": 0,
+        "R2": 0,
+        "R3": 0,
+        "R4": 0,
+        "R5": 5
+      }
+    },
+    "Thoughtbop": {
+      "name": "Thoughtbop",
+      "ruName": "Мысли в бит",
+      "rank": "S",
+      "ranks": {
+        "R1": 5,
+        "R2": 10,
+        "R3": 15
+      }
+    },
+    "Timeweaver": {
+      "name": "Timeweaver",
+      "ruName": "Ткач времени",
+      "rank": "S",
+      "ranks": {
+        "R1": 5,
+        "R2": 10,
+        "R3": 15
+      }
+    },
+    "Tusks of Fury": {
+      "name": "Tusks of Fury",
+      "ruName": "Клыки ярости",
+      "rank": "S",
+      "ranks": {
+        "R1": 5,
+        "R2": 10,
+        "R3": 15,
+        "R4": 20,
+        "R5": 25
+      }
+    },
+    "Weeping Cradle": {
+      "name": "Weeping Cradle",
+      "ruName": "Колыбель плача",
+      "rank": "S",
+      "ranks": {
+        "R1": 0,
+        "R2": 0,
+        "R3": 5,
+        "R4": 10,
+        "R5": 15
+      }
+    },
+    "Weeping Gemini": {
+      "name": "Weeping Gemini",
+      "ruName": "Плачущие близнецы",
+      "rank": "A",
+      "ranks": {
+        "R1": 0,
+        "R2": 0,
+        "R3": 0,
+        "R4": 0,
+        "R5": 0
+      }
+    },
+    "Wrathful Vajra": {
+      "name": "Wrathful Vajra",
+      "ruName": "Грозный страж",
+      "rank": "S",
+      "ranks": {
+        "R1": 5,
+        "R2": 10,
+        "R3": 15
+      }
+    },
+    "Yesterday Calls": {
+      "name": "Yesterday Calls",
+      "ruName": "Звонок из прошлого",
+      "rank": "S",
+      "ranks": {
+        "R1": 5,
+        "R2": 10,
+        "R3": 15
+      }
+    },
+    "Zanshin Herb Case": {
+      "name": "Zanshin Herb Case",
+      "ruName": "Аптечка дзансин",
+      "rank": "S",
+      "ranks": {
+        "R1": 5,
+        "R2": 10,
+        "R3": 15
+      }
+    },
+    "Knight's Extolment": {
+      "name": "Knight's Extolment",
+      "ruName": "Ход конём",
+      "rank": "S",
+      "ranks": {
+        "R1": 10,
+        "R2": 15,
+        "R3": 20
+      }
+    },
+    "Ode of Resurrected Wings": {
+      "name": "Ode of Resurrected Wings",
+      "ruName": "Ода о возвращении крыльев",
+      "rank": "S",
+      "ranks": {
+        "R1": 5,
+        "R2": 10,
+        "R3": 15
+      }
+    },
+    "Crimson Moon Casket": {
+      "name": "Crimson Moon Casket",
+      "ruName": "Багряный гроб",
+      "rank": "S",
+      "ranks": {
+        "R1": 5,
+        "R2": 10,
+        "R3": 15
+      }
+    },
+    "Crimson Thirst": {
+      "name": "Crimson Thirst",
+      "ruName": "Алая Жажда",
+      "rank": "S",
+      "ranks": {
+        "R1": 5,
+        "R2": 10,
+        "R3": 15
+      }
+    }
+  },
+  "specificAmplifierCosts": {
+    "Aria__Angel in the Shell": {
+      "R1": 15,
+      "R2": 20,
+      "R3": 25
+    },
+    "Orphie & Magus__Bellicose Blaze": {
+      "R1": 15,
+      "R2": 20,
+      "R3": 25
+    },
+    "Ju Fufu__Chief Sidekick": {
+      "R1": 15,
+      "R2": 20,
+      "R3": 25
+    },
+    "Koleda__Chief Sidekick": {
+      "R1": 10,
+      "R2": 15,
+      "R3": 20
+    },
+    "Norma__Chief Sidekick": {
+      "R1": 20,
+      "R2": 25,
+      "R3": 30
+    },
+    "Anton__Cloudcleave Radiance": {
+      "R1": 0,
+      "R2": 0,
+      "R3": 5
+    },
+    "Billy__Cloudcleave Radiance": {
+      "R1": 0,
+      "R2": 0,
+      "R3": 5
+    },
+    "Corin__Cloudcleave Radiance": {
+      "R1": 0,
+      "R2": 0,
+      "R3": 5
+    },
+    "Nekomata__Cloudcleave Radiance": {
+      "R1": 15,
+      "R2": 20,
+      "R3": 25
+    },
+    "Ye Shunguang__Cloudcleave Radiance": {
+      "R1": 20,
+      "R2": 25,
+      "R3": 30
+    },
+    "Anton__Cordis Germina": {
+      "R1": 0,
+      "R2": 0,
+      "R3": 5
+    },
+    "Harumasa__Cordis Germina": {
+      "R1": 15,
+      "R2": 20,
+      "R3": 25
+    },
+    "Billy__Cordis Germina": {
+      "R1": 0,
+      "R2": 0,
+      "R3": 5
+    },
+    "Cissia__Cordis Germina": {
+      "R1": 15,
+      "R2": 20,
+      "R3": 25
+    },
+    "Corin__Cordis Germina": {
+      "R1": 0,
+      "R2": 0,
+      "R3": 5
+    },
+    "Nekomata__Cordis Germina": {
+      "R1": 10,
+      "R2": 15,
+      "R3": 20
+    },
+    "Pyrois__Cordis Germina": {
+      "R1": 5,
+      "R2": 10,
+      "R3": 15
+    },
+    "Seed__Cordis Germina": {
+      "R1": 15,
+      "R2": 20,
+      "R3": 25
+    },
+    "Soldier 0 - Anby__Cordis Germina": {
+      "R1": 15,
+      "R2": 20,
+      "R3": 25
+    },
+    "Zhu Yuan__Cordis Germina": {
+      "R1": 5,
+      "R2": 10,
+      "R3": 15
+    },
+    "Ellen__Deep Sea Visitor": {
+      "R1": 10,
+      "R2": 15,
+      "R3": 20
+    },
+    "Lucia__Dreamlit Hearth": {
+      "R1": 10,
+      "R2": 15,
+      "R3": 20
+    },
+    "Aria__Flight of Fancy": {
+      "R1": 10,
+      "R2": 15,
+      "R3": 20
+    },
+    "Vivian__Flight of Fancy": {
+      "R1": 15,
+      "R2": 20,
+      "R3": 25
+    },
+    "Promeia__Frostfall Sickle": {
+      "R1": 20,
+      "R2": 25,
+      "R3": 30
+    },
+    "Grace__Fusion Compiler": {
+      "R1": 5,
+      "R2": 5,
+      "R3": 10,
+      "R4": 15,
+      "R5": 20
+    },
+    "Yanagi__Fusion Compiler": {
+      "R1": 5,
+      "R2": 5,
+      "R3": 10,
+      "R4": 15,
+      "R5": 20
+    },
+    "Miyabi__Hailstorm Shrine": {
+      "R1": 15,
+      "R2": 20,
+      "R3": 25,
+      "R4": 0,
+      "R5": 0
+    },
+    "Ben__Half-Sugar Bunny": {
+      "R1": 0,
+      "R2": 0,
+      "R3": 0
+    },
+    "Seth__Half-Sugar Bunny": {
+      "R1": 0,
+      "R2": 0,
+      "R3": 5
+    },
+    "Zhao__Half-Sugar Bunny": {
+      "R1": 10,
+      "R2": 15,
+      "R3": 20
+    },
+    "Anton__Heartstring Nocturne": {
+      "R1": 0,
+      "R2": 0,
+      "R3": 5
+    },
+    "Billy__Heartstring Nocturne": {
+      "R1": 0,
+      "R2": 0,
+      "R3": 5
+    },
+    "Corin__Heartstring Nocturne": {
+      "R1": 0,
+      "R2": 0,
+      "R3": 5
+    },
+    "Evelyn__Heartstring Nocturne": {
+      "R1": 15,
+      "R2": 20,
+      "R3": 25
+    },
+    "Nekomata__Heartstring Nocturne": {
+      "R1": 10,
+      "R2": 15,
+      "R3": 20
+    },
+    "Pyrois__Heartstring Nocturne": {
+      "R1": 5,
+      "R2": 10,
+      "R3": 15
+    },
+    "Soldier 0 - Anby__Heartstring Nocturne": {
+      "R1": 15,
+      "R2": 20,
+      "R3": 25
+    },
+    "Zhu Yuan__Heartstring Nocturne": {
+      "R1": 0,
+      "R2": 0,
+      "R3": 5
+    },
+    "Velina__Joyau Dore": {
+      "R1": 25,
+      "R2": 25,
+      "R3": 30
+    },
+    "Yidhari__Kraken's Cradle": {
+      "R1": 10,
+      "R2": 15,
+      "R3": 20,
+      "R4": 0,
+      "R5": 0
+    },
+    "Yuzuha__Metanukimorphosis": {
+      "R1": 10,
+      "R2": 15,
+      "R3": 20
+    },
+    "Anton__Myriad Eclipse": {
+      "R1": 0,
+      "R2": 0,
+      "R3": 5
+    },
+    "Billy__Myriad Eclipse": {
+      "R1": 0,
+      "R2": 0,
+      "R3": 5
+    },
+    "Corin__Myriad Eclipse": {
+      "R1": 0,
+      "R2": 0,
+      "R3": 5
+    },
+    "Ellen__Myriad Eclipse": {
+      "R1": 15,
+      "R2": 20,
+      "R3": 25
+    },
+    "Hugo__Myriad Eclipse": {
+      "R1": 15,
+      "R2": 20,
+      "R3": 25
+    },
+    "Nekomata__Myriad Eclipse": {
+      "R1": 10,
+      "R2": 15,
+      "R3": 20
+    },
+    "Pyrois__Myriad Eclipse": {
+      "R1": 5,
+      "R2": 10,
+      "R3": 15
+    },
+    "Zhu Yuan__Myriad Eclipse": {
+      "R1": 0,
+      "R2": 0,
+      "R3": 5
+    },
+    "Nangong Yu__Neon Fantasies": {
+      "R1": 20,
+      "R2": 25,
+      "R3": 30
+    },
+    "Alice__Practiced Perfection": {
+      "R1": 5,
+      "R2": 10,
+      "R3": 15
+    },
+    "Jane__Practiced Perfection": {
+      "R1": 5,
+      "R2": 10,
+      "R3": 15
+    },
+    "Yixuan__Qingming Birdcage": {
+      "R1": 10,
+      "R2": 15,
+      "R3": 20,
+      "R4": 0,
+      "R5": 0
+    },
+    "Anton__Riot Suppressor Mark VI": {
+      "R1": 0,
+      "R2": 0,
+      "R3": 5
+    },
+    "Billy__Riot Suppressor Mark VI": {
+      "R1": 0,
+      "R2": 0,
+      "R3": 5
+    },
+    "Corin__Riot Suppressor Mark VI": {
+      "R1": 0,
+      "R2": 0,
+      "R3": 5
+    },
+    "Pyrois__Riot Suppressor Mark VI": {
+      "R1": 5,
+      "R2": 10,
+      "R3": 15
+    },
+    "Zhu Yuan__Riot Suppressor Mark VI": {
+      "R1": 5,
+      "R2": 10,
+      "R3": 15
+    },
+    "Ju Fufu__Roaring Fur-nace": {
+      "R1": 15,
+      "R2": 20,
+      "R3": 25
+    },
+    "Cissia__Serpentine Seeker": {
+      "R1": 20,
+      "R2": 25,
+      "R3": 30
+    },
+    "Anton__Severed Innocence": {
+      "R1": 0,
+      "R2": 0,
+      "R3": 5
+    },
+    "Billy__Severed Innocence": {
+      "R1": 0,
+      "R2": 0,
+      "R3": 5
+    },
+    "Corin__Severed Innocence": {
+      "R1": 0,
+      "R2": 0,
+      "R3": 5
+    },
+    "Nekomata__Severed Innocence": {
+      "R1": 10,
+      "R2": 15,
+      "R3": 20
+    },
+    "Pyrois__Severed Innocence": {
+      "R1": 10,
+      "R2": 15,
+      "R3": 20
+    },
+    "Soldier 0 - Anby__Severed Innocence": {
+      "R1": 15,
+      "R2": 20,
+      "R3": 25
+    },
+    "Zhu Yuan__Severed Innocence": {
+      "R1": 0,
+      "R2": 0,
+      "R3": 5
+    },
+    "Jane__Sharpened Stinger": {
+      "R1": 5,
+      "R2": 5,
+      "R3": 10,
+      "R4": 15,
+      "R5": 20
+    },
+    "Pyrois__Sol Exuvia": {
+      "R1": 15,
+      "R2": 15,
+      "R3": 15,
+      "R4": 15,
+      "R5": 15
+    },
+    "Trigger__Spectral Gaze": {
+      "R1": 15,
+      "R2": 20,
+      "R3": 25
+    },
+    "Starlight - Billy__Starlight Rider Faceplate": {
+      "R1": 10,
+      "R2": 15,
+      "R3": 20,
+      "R4": 0,
+      "R5": 0
+    },
+    "Billy__Steel Cushion": {
+      "R1": 0,
+      "R2": 0,
+      "R3": 0,
+      "R4": 5,
+      "R5": 5
+    },
+    "Corin__Steel Cushion": {
+      "R1": 0,
+      "R2": 0,
+      "R3": 0,
+      "R4": 5,
+      "R5": 5
+    },
+    "Nekomata__Steel Cushion": {
+      "R1": 15,
+      "R2": 15,
+      "R3": 20,
+      "R4": 25,
+      "R5": 30
+    },
+    "Anton__The Brimstone": {
+      "R1": 0,
+      "R2": 0,
+      "R3": 0,
+      "R4": 5,
+      "R5": 5
+    },
+    "Harumasa__The Brimstone": {
+      "R1": 5,
+      "R2": 10,
+      "R3": 10,
+      "R4": 15,
+      "R5": 20
+    },
+    "Billy__The Brimstone": {
+      "R1": 0,
+      "R2": 0,
+      "R3": 0,
+      "R4": 5,
+      "R5": 5
+    },
+    "Soldier 0 - Anby__The Brimstone": {
+      "R1": 10,
+      "R2": 10,
+      "R3": 15,
+      "R4": 20,
+      "R5": 25
+    },
+    "Zhu Yuan__The Brimstone": {
+      "R1": 0,
+      "R2": 0,
+      "R3": 5,
+      "R4": 10,
+      "R5": 15
+    },
+    "Sigrid__The Brimstone": {
+      "R1": 0,
+      "R2": 5,
+      "R3": 5,
+      "R4": 10,
+      "R5": 15
+    },
+    "Sunna__Thoughtbop": {
+      "R1": 15,
+      "R2": 20,
+      "R3": 25
+    },
+    "Yuzuha__Thoughtbop": {
+      "R1": 10,
+      "R2": 15,
+      "R3": 20
+    },
+    "Yanagi__Timeweaver": {
+      "R1": 15,
+      "R2": 20,
+      "R3": 25
+    },
+    "Ben__Tusks of Fury": {
+      "R1": 0,
+      "R2": 0,
+      "R3": 5
+    },
+    "Rina__Weeping Cradle": {
+      "R1": 10,
+      "R2": 10,
+      "R3": 15,
+      "R4": 15,
+      "R5": 20
+    },
+    "Banyue__Wrathful Vajra": {
+      "R1": 5,
+      "R2": 10,
+      "R3": 15,
+      "R4": 0,
+      "R5": 0
+    },
+    "Dialyn__Yesterday Calls": {
+      "R1": 15,
+      "R2": 20,
+      "R3": 25
+    },
+    "Anton__Zanshin Herb Case": {
+      "R1": 0,
+      "R2": 0,
+      "R3": 5
+    },
+    "Harumasa__Zanshin Herb Case": {
+      "R1": 10,
+      "R2": 15,
+      "R3": 20
+    },
+    "Billy__Zanshin Herb Case": {
+      "R1": 0,
+      "R2": 0,
+      "R3": 5
+    },
+    "Corin__Zanshin Herb Case": {
+      "R1": 0,
+      "R2": 0,
+      "R3": 5
+    },
+    "Pyrois__Zanshin Herb Case": {
+      "R1": 5,
+      "R2": 10,
+      "R3": 15
+    },
+    "Sigrid__Knight's Extolment": {
+      "R1": 25,
+      "R2": 30,
+      "R3": 35
+    },
+    "Remielle__Ode of Resurrected Wings": {
+      "R1": 20,
+      "R2": 25,
+      "R3": 30
+    },
+    "Roxy__Crimson Moon Casket": {
+      "R1": 20,
+      "R2": 25,
+      "R3": 30
+    },
+    "Claret__Crimson Thirst": {
+      "R1": 25,
+      "R2": 30,
+      "R3": 35
+    }
+  }
+}

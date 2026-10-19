@@ -1,0 +1,21 @@
+{
+  "name": "zzz-assault-predictor",
+  "version": "1.0.0",
+  "description": "Tactical score predictor, squad builder and archive for Zenless Zone Zero Deadly Assault mode",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "audit": "node audit-app.js",
+    "train": "node scripts/train-deep-model.js"
+  },
+  "keywords": [
+    "zenless-zone-zero",
+    "zzz",
+    "deadly-assault",
+    "neural-network",
+    "deep-mlp",
+    "calculator"
+  ],
+  "author": "",
+  "license": "MIT"
+}

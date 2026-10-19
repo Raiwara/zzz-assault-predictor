@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZZZ Deadly Assault Predictor | Калькулятор Опасного Штурма</title>
+  
+  <!-- ZZZ Authentic Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,500;0,600;0,700;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Russo+One&family=Teko:wght@600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css?v=11">
+</head>
+<body>
+  <!-- Ambient Atmospheric ZZZ Backdrops -->
+  <div class="hollow-ambient-glow" aria-hidden="true"></div>
+  <div class="hollow-grid-pattern" aria-hidden="true"></div>
+  <div class="crt-scanlines" aria-hidden="true"></div>
+
+  <!-- Top Caution Hazard Bar -->
+  <div class="top-hazard-strip" aria-hidden="true">
+    <div class="hazard-ticker">
+      <span>// DEADLY ASSAULT TACTICAL SYSTEM // HOLLOW INVESTIGATION ASSOCIATION // PROTOCOL 07 // INTER-KNOT CONNECTED // ARCHIVE BENCHMARKS LOADED //</span>
+      <span>// DEADLY ASSAULT TACTICAL SYSTEM // HOLLOW INVESTIGATION ASSOCIATION // PROTOCOL 07 // INTER-KNOT CONNECTED // ARCHIVE BENCHMARKS LOADED //</span>
+    </div>
+  </div>
+
+  <div class="app-container">
+    
+    <!-- Header -->
+    <header class="app-header">
+      <div class="logo-area">
+        <div class="logo-sub">// HOLLOW TACTICAL PREDICTOR //</div>
+        <h1>
+          <span class="logo-title">ZZZ ASSAULT PREDICTOR</span>
+          <span class="logo-badge badge-assault">DEADLY ASSAULT</span>
+          <span class="logo-badge badge-neural">🧠 AI NEURAL MODEL</span>
+        </h1>
+        <p>Нейросетевой калькулятор и сборщик отрядов Опасного Штурма по двухнедельным ротациям на основе статистики архивов</p>
+      </div>
+
+      <div class="header-actions">
+        <button id="auto-fill-full-btn" class="btn btn-primary btn-cyber" title="Собрать 3 непересекающиеся пачки из вашего пула на все 3 комнаты">
+          <span class="btn-icon">⚡</span>
+          <span class="btn-text">Собрать 3 отряда из моего пула</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <nav class="nav-tabs">
+      <button class="tab-btn active" data-tab="tab-calc">Калькулятор ротации</button>
+      <button class="tab-btn" data-tab="tab-bosses">База ротаций и боссов</button>
+      <button class="tab-btn" data-tab="tab-runs">Архив проходок по таймлайнам</button>
+      <button class="tab-btn" data-tab="tab-manager">База данных и обновление</button>
+    </nav>
+
+    <!-- Tab 1: Calculator -->
+    <div id="tab-calc" class="tab-content active">
+      
+      <!-- Rotation Selector Bar -->
+      <div class="rotation-selector-bar">
+        <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap;">
+          <label style="font-size:13px; font-weight:800; text-transform:uppercase; color:var(--text-secondary);">
+            Выбор ротации (таймлайн 2 недели):
+          </label>
+          <select id="rotation-select" style="min-width: 320px; font-weight:700;"></select>
+          <span id="rotation-status-badge" class="timeline-badge">АКТИВНА</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap;">
+          <button id="open-my-roster-btn" class="btn-my-roster" title="Настроить доступных агентов, созвездия (M0-M6) и сигны">
+            <span>👤</span> Мой ростер
+          </button>
+          <div id="rotation-dates" style="font-size: 13px; color: var(--text-secondary);"></div>
+        </div>
+      </div>
+
+      <!-- Room Navigation Bar -->
+      <div class="room-nav">
+        <button class="room-tab-btn active" data-room="1" id="room-tab-1">Комната 1: ...</button>
+        <button class="room-tab-btn" data-room="2" id="room-tab-2">Комната 2: ...</button>
+        <button class="room-tab-btn" data-room="3" id="room-tab-3">Комната 3: ...</button>
+        <button class="room-tab-btn overview-btn" data-room="overview" id="room-tab-overview">🏆 Сводка всего штурма (3 комн.)</button>
+      </div>
+
+      <!-- Agent Conflict / Validation Alert -->
+      <div id="conflict-alert-box"></div>
+
+      <!-- Main Room View Grid -->
+      <div id="room-view-container" class="calc-grid">
+        
+        <!-- Left Column: Inputs for Selected Room -->
+        <div class="calc-inputs">
+          
+          <!-- Static Boss Banner -->
+          <div class="static-boss-banner">
+            <div class="static-boss-header">
+              <div class="static-boss-name" id="room-boss-title">Босс комнаты</div>
+              <div id="room-boss-tags" class="tag-row"></div>
+            </div>
+            <div id="room-boss-mechanics" style="font-size: 12px; color: var(--text-secondary); line-height: 1.5;"></div>
+          </div>
+
+          <!-- Room Buff & Bangboo -->
+          <div class="panel" style="padding: 16px;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+              <div class="form-group" style="margin-bottom:0;">
+                <label class="form-label" for="room-buff-select">Сезонный бафф для этой пачки</label>
+                <select id="room-buff-select"></select>
+              </div>
+
+              <div class="form-group" style="margin-bottom:0;">
+                <label class="form-label" for="room-bangboo-select">Банбу отряда</label>
+                <div class="visual-picker-trigger visual-bangboo-trigger" id="bangboo-visual-trigger" title="Нажмите для выбора банбу по картинке">
+                  <div class="visual-thumb-wrap">
+                    <img id="bangboo-visual-img" src="" alt="" style="display:none;" />
+                    <span id="bangboo-visual-empty" class="visual-empty-icon">🤖</span>
+                  </div>
+                  <div class="visual-trigger-text">
+                    <div id="bangboo-visual-name" class="visual-trigger-title">Sharkboo</div>
+                    <div class="visual-trigger-sub">🖼️ Выбрать по картинке</div>
+                  </div>
+                </div>
+                <select id="room-bangboo-select" style="margin-top:6px;"></select>
+              </div>
+            </div>
+            <div id="room-buff-desc" style="font-size: 12px; color: var(--text-secondary); margin-top: 10px;"></div>
+          </div>
+
+          <!-- Team Composition Section (3 Slots) -->
+          <div class="panel">
+            <div class="panel-header">
+              <div class="panel-title"><span id="panel-room-number">Комната 1</span> Состав отряда</div>
+              <div style="display:flex; gap:8px; align-items:center;">
+                <button id="room-reset-btn" class="btn btn-reset-room" title="Очистить состав текущей комнаты">🗑️ Сбросить комнату</button>
+                <button id="room-calc-btn" class="btn btn-primary" style="padding: 6px 14px; font-size: 12px;">Рассчитать комнату</button>
+              </div>
+            </div>
+
+            <div class="team-slots">
+              
+              <!-- Slot 1 -->
+              <div class="char-slot">
+                <div class="char-slot-header" style="position:relative;">
+                  <span class="slot-number">Слот 1</span>
+                  <div style="display:flex; gap:6px; align-items:center;">
+                    <button id="replace-btn-1" class="slot-replacements-btn" title="Показать потенциальные замены в этот отряд">🔄 Замены</button>
+                    <button id="sig-btn-1" class="slot-quick-sig" title="Надеть сигнатурный амплификатор">Сигна</button>
+                  </div>
+                  <div id="replacements-popover-1" class="replacements-popover" style="display:none;"></div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Агент</label>
+                  <div class="visual-picker-trigger visual-agent-trigger" id="agent-visual-trigger-1" title="Нажмите для выбора агента по картинке">
+                    <div class="visual-thumb-wrap">
+                      <img id="agent-visual-img-1" src="" alt="" style="display:none;" />
+                      <span id="agent-visual-empty-1" class="visual-empty-icon">👤</span>
+                    </div>
+                    <div class="visual-trigger-text">
+                      <div id="agent-visual-name-1" class="visual-trigger-title">Выбрать агента</div>
+                      <div id="agent-visual-sub-1" class="visual-trigger-sub">🖼️ Выбрать по картинке</div>
+                    </div>
+                  </div>
+                  <select id="char-select-1" style="margin-top:6px;"></select>
+                </div>
+                <div class="mindscape-refine-row">
+                  <div class="form-group">
+                    <label class="form-label">Ментальное поле</label>
+                    <select id="mind-select-1">
+                      <option value="0">M0</option>
+                      <option value="1">M1</option>
+                      <option value="2">M2</option>
+                      <option value="3">M3</option>
+                      <option value="4">M4</option>
+                      <option value="5">M5</option>
+                      <option value="6">M6</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">Амплификация</label>
+                    <select id="refine-select-1">
+                      <option value="1">R1</option>
+                      <option value="2">R2</option>
+                      <option value="3">R3</option>
+                      <option value="4">R4</option>
+                      <option value="5">R5</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group" style="margin-bottom:0;">
+                  <label class="form-label">Амплификатор</label>
+                  <div class="visual-picker-trigger visual-weapon-trigger" id="weap-visual-trigger-1" title="Нажмите для выбора амплификатора по картинке">
+                    <div class="visual-thumb-wrap visual-thumb-sm">
+                      <img id="weap-visual-img-1" src="" alt="" style="display:none;" />
+                      <span id="weap-visual-empty-1" class="visual-empty-icon">⚙️</span>
+                    </div>
+                    <div class="visual-trigger-text">
+                      <div id="weap-visual-name-1" class="visual-trigger-title">Выбрать амплификатор</div>
+                    </div>
+                  </div>
+                  <select id="weap-select-1" style="margin-top:6px;"></select>
+                </div>
+              </div>
+
+              <!-- Slot 2 -->
+              <div class="char-slot">
+                <div class="char-slot-header" style="position:relative;">
+                  <span class="slot-number">Слот 2</span>
+                  <div style="display:flex; gap:6px; align-items:center;">
+                    <button id="replace-btn-2" class="slot-replacements-btn" title="Показать потенциальные замены в этот отряд">🔄 Замены</button>
+                    <button id="sig-btn-2" class="slot-quick-sig" title="Надеть сигнатурный амплификатор">Сигна</button>
+                  </div>
+                  <div id="replacements-popover-2" class="replacements-popover" style="display:none;"></div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Агент</label>
+                  <div class="visual-picker-trigger visual-agent-trigger" id="agent-visual-trigger-2" title="Нажмите для выбора агента по картинке">
+                    <div class="visual-thumb-wrap">
+                      <img id="agent-visual-img-2" src="" alt="" style="display:none;" />
+                      <span id="agent-visual-empty-2" class="visual-empty-icon">👤</span>
+                    </div>
+                    <div class="visual-trigger-text">
+                      <div id="agent-visual-name-2" class="visual-trigger-title">Выбрать агента</div>
+                      <div id="agent-visual-sub-2" class="visual-trigger-sub">🖼️ Выбрать по картинке</div>
+                    </div>
+                  </div>
+                  <select id="char-select-2" style="margin-top:6px;"></select>
+                </div>
+                <div class="mindscape-refine-row">
+                  <div class="form-group">
+                    <label class="form-label">Ментальное поле</label>
+                    <select id="mind-select-2">
+                      <option value="0">M0</option>
+                      <option value="1">M1</option>
+                      <option value="2">M2</option>
+                      <option value="3">M3</option>
+                      <option value="4">M4</option>
+                      <option value="5">M5</option>
+                      <option value="6">M6</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">Амплификация</label>
+                    <select id="refine-select-2">
+                      <option value="1">R1</option>
+                      <option value="2">R2</option>
+                      <option value="3">R3</option>
+                      <option value="4">R4</option>
+                      <option value="5">R5</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group" style="margin-bottom:0;">
+                  <label class="form-label">Амплификатор</label>
+                  <div class="visual-picker-trigger visual-weapon-trigger" id="weap-visual-trigger-2" title="Нажмите для выбора амплификатора по картинке">
+                    <div class="visual-thumb-wrap visual-thumb-sm">
+                      <img id="weap-visual-img-2" src="" alt="" style="display:none;" />
+                      <span id="weap-visual-empty-2" class="visual-empty-icon">⚙️</span>
+                    </div>
+                    <div class="visual-trigger-text">
+                      <div id="weap-visual-name-2" class="visual-trigger-title">Выбрать амплификатор</div>
+                    </div>
+                  </div>
+                  <select id="weap-select-2" style="margin-top:6px;"></select>
+                </div>
+              </div>
+
+              <!-- Slot 3 -->
+              <div class="char-slot">
+                <div class="char-slot-header" style="position:relative;">
+                  <span class="slot-number">Слот 3</span>
+                  <div style="display:flex; gap:6px; align-items:center;">
+                    <button id="replace-btn-3" class="slot-replacements-btn" title="Показать потенциальные замены в этот отряд">🔄 Замены</button>
+                    <button id="sig-btn-3" class="slot-quick-sig" title="Надеть сигнатурный амплификатор">Сигна</button>
+                  </div>
+                  <div id="replacements-popover-3" class="replacements-popover" style="display:none;"></div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Агент</label>
+                  <div class="visual-picker-trigger visual-agent-trigger" id="agent-visual-trigger-3" title="Нажмите для выбора агента по картинке">
+                    <div class="visual-thumb-wrap">
+                      <img id="agent-visual-img-3" src="" alt="" style="display:none;" />
+                      <span id="agent-visual-empty-3" class="visual-empty-icon">👤</span>
+                    </div>
+                    <div class="visual-trigger-text">
+                      <div id="agent-visual-name-3" class="visual-trigger-title">Выбрать агента</div>
+                      <div id="agent-visual-sub-3" class="visual-trigger-sub">🖼️ Выбрать по картинке</div>
+                    </div>
+                  </div>
+                  <select id="char-select-3" style="margin-top:6px;"></select>
+                </div>
+                <div class="mindscape-refine-row">
+                  <div class="form-group">
+                    <label class="form-label">Ментальное поле</label>
+                    <select id="mind-select-3">
+                      <option value="0">M0</option>
+                      <option value="1">M1</option>
+                      <option value="2">M2</option>
+                      <option value="3">M3</option>
+                      <option value="4">M4</option>
+                      <option value="5">M5</option>
+                      <option value="6">M6</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">Амплификация</label>
+                    <select id="refine-select-3">
+                      <option value="1">R1</option>
+                      <option value="2">R2</option>
+                      <option value="3">R3</option>
+                      <option value="4">R4</option>
+                      <option value="5">R5</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group" style="margin-bottom:0;">
+                  <label class="form-label">Амплификатор</label>
+                  <div class="visual-picker-trigger visual-weapon-trigger" id="weap-visual-trigger-3" title="Нажмите для выбора амплификатора по картинке">
+                    <div class="visual-thumb-wrap visual-thumb-sm">
+                      <img id="weap-visual-img-3" src="" alt="" style="display:none;" />
+                      <span id="weap-visual-empty-3" class="visual-empty-icon">⚙️</span>
+                    </div>
+                    <div class="visual-trigger-text">
+                      <div id="weap-visual-name-3" class="visual-trigger-title">Выбрать амплификатор</div>
+                    </div>
+                  </div>
+                  <select id="weap-select-3" style="margin-top:6px;"></select>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Results for Selected Room -->
+        <div class="calc-results">
+          
+          <div class="score-card">
+            <span id="result-rank" class="score-badge">S-РАНГ</span>
+            <div id="result-score" class="score-main">65,000</div>
+            <div id="result-score-range" class="score-range">Доверительный интервал: 62,000 – 65,000 очков</div>
+            
+            <div id="result-verdict" style="font-size: 13px; font-weight: 700; color: var(--accent-yellow); margin-top: 8px;">
+              Уверенный S-ранг при стабильной ротации
+            </div>
+
+            <!-- Stats Grid -->
+            <div class="score-stats-grid">
+              <div class="stat-item">
+                <div class="stat-label">Оценка времени</div>
+                <div id="result-time" class="stat-value">~82 сек.</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-label">Потолок очков</div>
+                <div id="result-full-score" class="stat-value">65,000 / 65k</div>
+              </div>
+            </div>
+
+            <!-- Multipliers Breakdown -->
+            <div style="display:grid; grid-template-columns: repeat(6, 1fr); gap: 6px; margin-bottom: 14px; background: var(--bg-input); padding: 8px 6px; border-radius: var(--radius-sm); border: 1px solid var(--border-color); text-align: center; font-size: 11px;">
+              <div><span style="color:var(--text-secondary); display:block; font-size:10px;">Роли</span><strong id="mult-role" style="color:#fff;">1.0x</strong></div>
+              <div><span style="color:var(--text-secondary); display:block; font-size:10px;">Стихия</span><strong id="mult-elem" style="color:var(--accent-cyan);">1.0x</strong></div>
+              <div><span style="color:var(--text-secondary); display:block; font-size:10px;">Механика</span><strong id="mult-mech" style="color:var(--accent-yellow);">1.0x</strong></div>
+              <div><span style="color:var(--text-secondary); display:block; font-size:10px;">Прокачка</span><strong id="mult-invest" style="color:var(--accent-purple);">1.0x</strong></div>
+              <div><span style="color:var(--text-secondary); display:block; font-size:10px;">Бафф</span><strong id="mult-buff" style="color:var(--accent-green);">1.0x</strong></div>
+              <div><span style="color:var(--text-secondary); display:block; font-size:10px;">Итого</span><strong id="mult-total" style="color:var(--accent-yellow); font-weight:800;">1.0x</strong></div>
+            </div>
+
+            <div style="font-size: 12px; margin-bottom: 12px; color: var(--text-secondary); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+              <div><strong>Архетип:</strong> <span id="result-archetype" style="color: #fff;">Классический гиперкерри</span></div>
+              <div style="display:flex; align-items:center; gap:8px;">
+                <div id="result-passives-badge" style="display:inline-flex; align-items:center; gap:4px; font-size:11px; font-weight:700; padding:2px 8px; border-radius:10px; background:rgba(0,255,136,0.15); color:var(--accent-green); border:1px solid rgba(0,255,136,0.3);">⚡ Пассивки: 3/3 активны</div>
+                <span id="result-cost-badge" class="badge" style="display:none;"></span>
+              </div>
+            </div>
+
+            <!-- Tactical Advantages & Warnings -->
+            <div class="tactical-box">
+              <div class="tactical-title" style="color: var(--accent-green);">Преимущества отряда:</div>
+              <ul id="pros-list" class="tip-list"></ul>
+            </div>
+
+            <div class="tactical-box" style="margin-top: 12px;">
+              <div class="tactical-title" style="color: var(--accent-orange);">Предостережения:</div>
+              <ul id="cons-list" class="tip-list"></ul>
+            </div>
+
+            <!-- Benchmark Runs Match -->
+            <div class="tactical-box" style="margin-top: 16px; border-top: 1px solid var(--border-color); padding-top: 12px;">
+              <div class="tactical-title" style="color: var(--accent-cyan);">Схожие забеги из архива:</div>
+              <div id="matching-runs" class="runs-list"></div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Overview Mode View (Hidden by default, shown when overview tab is clicked) -->
+      <div id="assault-overview-container" style="display: none;">
+        
+        <div class="total-score-banner">
+          <span style="font-size:14px; font-weight:800; text-transform:uppercase; color:var(--text-secondary); letter-spacing:1px;">
+            Прогноз суммарного счёта штурма (3 комнаты):
+          </span>
+          <div id="total-assault-score" class="total-score-val">0</div>
+          <div id="total-assault-verdict" style="font-size:16px; font-weight:700; color:#fff;">Соберите отряды во всех трёх комнатах</div>
+          <div style="margin-top: 14px; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+            <button id="auto-fill-roster-btn" class="btn btn-primary" style="padding: 10px 22px; font-weight: 800; font-size: 13px;">
+              ⚡ Подобрать ростер под себя (из моих персов)
+            </button>
+            <button id="overview-open-roster-btn" class="btn btn-secondary" style="padding: 10px 18px; font-size: 13px;">
+              👤 Настроить мой ростер
+            </button>
+          </div>
+        </div>
+
+        <div class="assault-overview-grid" id="overview-rooms-grid"></div>
+
+      </div>
+
+    </div>
+
+    <!-- Tab 2: Bosses & Rotations Database -->
+    <div id="tab-bosses" class="tab-content">
+      <div class="panel">
+        <div class="panel-header">
+          <div class="panel-title"><span>База ротаций</span> Двухнедельные таймлайны и боссы</div>
+        </div>
+        <div id="rotations-list-container"></div>
+      </div>
+    </div>
+
+    <!-- Tab 3: Run Archive -->
+    <div id="tab-runs" class="tab-content">
+      <div class="panel">
+        <div class="panel-header">
+          <div class="panel-title"><span>Архив забегов</span> Статистика по ротациям</div>
+          <span style="font-size:12px; color:var(--text-secondary);">zzz-run-archive, prydwen.gg, nexus-shiyu, YouTube</span>
+        </div>
+
+        <div style="display: flex; gap: 12px; align-items: center; margin-bottom: 12px; padding: 12px 14px; background: var(--bg-input); border-radius: var(--radius-sm); border: 1px solid var(--border-color); flex-wrap: wrap;">
+          <div style="display: flex; flex-direction: column; gap: 4px;">
+            <label style="font-size: 11px; font-weight: 800; color: var(--accent-cyan); text-transform: uppercase;">👤 Персонажи в отряде:</label>
+            <div style="display: flex; gap: 8px; align-items: center;">
+              <button id="open-runs-visual-filter-btn" class="btn btn-secondary" style="font-size:12px; border-color:var(--accent-cyan); color:#fff; display:inline-flex; align-items:center; gap:6px; padding:7px 14px;" title="Выбрать персонажей по картинкам (включить несколько или исключить)">
+                <span>🖼️</span> Выбрать по картинкам (вкл / искл)
+                <span id="runs-visual-filter-count" class="badge badge-s" style="display:none; font-size:10px; padding:1px 6px;">0</span>
+              </button>
+              <select id="runs-char-filter" style="min-width: 170px; padding: 6px 10px; font-size: 13px; font-weight: 700;"></select>
+            </div>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 4px;">
+            <label for="runs-cost-filter" style="font-size: 11px; font-weight: 800; color: var(--accent-yellow); text-transform: uppercase;">💰 Кост отряда:</label>
+            <select id="runs-cost-filter" style="min-width: 160px; padding: 6px 10px; font-size: 13px; font-weight: 700;">
+              <option value="all">Все косты (любой)</option>
+              <option value="low">Лоу-кост (Cost ≤ 3)</option>
+              <option value="tourney">Турнирный (Cost ≤ 5)</option>
+              <option value="mid">Средний (Cost ≤ 6)</option>
+              <option value="c0">Cost 0 (Без лимиток)</option>
+              <option value="c1">Cost 1</option>
+              <option value="c2">Cost 2</option>
+              <option value="c3">Cost 3</option>
+              <option value="c4">Cost 4</option>
+              <option value="c5">Cost 5</option>
+              <option value="c6">Cost 6</option>
+              <option value="high">Хай-кост (Cost 7+)</option>
+            </select>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 4px;">
+            <label for="runs-rotation-filter" style="font-size: 11px; font-weight: 800; color: var(--text-secondary); text-transform: uppercase;">📅 Ротация:</label>
+            <select id="runs-rotation-filter" style="min-width: 200px; padding: 6px 10px; font-size: 13px;"></select>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 4px;">
+            <label for="runs-boss-filter" style="font-size: 11px; font-weight: 800; color: var(--text-secondary); text-transform: uppercase;">👾 Босс / Комната:</label>
+            <select id="runs-boss-filter" style="min-width: 170px; padding: 6px 10px; font-size: 13px;"></select>
+          </div>
+          <div style="margin-left: auto; display: flex; align-items: flex-end; padding-top: 16px; gap: 8px;">
+            <span id="runs-count-badge" style="font-size: 13px; color: var(--accent-green); font-weight: 800; background: rgba(0, 255, 136, 0.1); border: 1px solid rgba(0, 255, 136, 0.3); padding: 5px 10px; border-radius: 4px;">
+              Найдено: 10,011
+            </span>
+          </div>
+        </div>
+
+        <!-- Active Character Inclusion & Exclusion Tags Tray -->
+        <div id="runs-active-tags-tray" style="display: none; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; padding: 10px 14px; background: rgba(14, 17, 26, 0.7); border-radius: var(--radius-sm); border: 1px dashed var(--border-color);">
+          <span style="font-size: 11px; font-weight: 800; color: var(--text-secondary); text-transform: uppercase;">Активные фильтры:</span>
+          <div id="runs-active-tags-list" style="display: flex; gap: 6px; flex-wrap: wrap; align-items: center;"></div>
+          <button id="runs-clear-char-tags-btn" class="btn btn-secondary" style="font-size: 10px; padding: 3px 8px; margin-left: auto;">
+            ✕ Сбросить персонажей
+          </button>
+        </div>
+
+        <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 13px;">
+          <thead>
+            <tr style="border-bottom: 2px solid var(--border-color); color: var(--text-secondary);">
+              <th style="padding: 12px;">Ротация</th>
+              <th style="padding: 12px;">Кост</th>
+              <th style="padding: 12px;">Комната / Босс</th>
+              <th style="padding: 12px;">Отряд (Ментальные поля + Оружие)</th>
+              <th style="padding: 12px;">Банбу</th>
+              <th style="padding: 12px;">Счёт</th>
+              <th style="padding: 12px;">Время</th>
+              <th style="padding: 12px;">Источник</th>
+            </tr>
+          </thead>
+          <tbody id="runs-table-body"></tbody>
+        </table>
+        <div id="runs-load-more-container" style="text-align: center; margin-top: 16px; margin-bottom: 24px; display: none;">
+          <button id="runs-load-more-btn" class="btn btn-secondary" style="padding: 8px 24px; font-size: 13px; font-weight: 700;">
+            ⬇️ Показать ещё 50 забегов
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 4: Database Manager & Updates -->
+    <div id="tab-manager" class="tab-content">
+      <div class="panel">
+        <div class="panel-header">
+          <div class="panel-title"><span>Управление</span> Постоянное хранение и обновление базы</div>
+        </div>
+
+        <div style="font-size: 14px; line-height: 1.6; color: var(--text-secondary); margin-bottom: 20px;">
+          <p>Все персонажи, оружие, банбу, двухнедельные ротации и проходки постоянно хранятся в приложении. Статистика накапливается по таймлайнам и не стирается при смене ротаций.</p>
+        </div>
+
+        <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 24px;">
+          <button id="export-db-btn" class="btn btn-secondary">💾 Экспорт базы в JSON</button>
+          <label class="btn btn-secondary" style="margin-bottom:0; cursor:pointer;">
+            📥 Импорт базы из JSON
+            <input id="import-db-input" type="file" accept=".json" style="display: none;">
+          </label>
+          <button id="reset-db-btn" class="btn btn-accent">Сброс к исходным данным</button>
+        </div>
+
+        <div style="background: linear-gradient(135deg, rgba(0, 240, 255, 0.08), rgba(230, 255, 0, 0.05)); border: 1px solid var(--accent-cyan); border-radius: var(--radius-md); padding: 18px; margin-bottom: 20px;">
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:12px;">
+            <div>
+              <h4 style="color: var(--accent-cyan); font-size:16px; font-weight:800; display:flex; align-items:center; gap:8px;">
+                <span>🧠 Глубокая нейросетевая модель (Deep MLP Neural Network)</span>
+              </h4>
+              <p style="font-size:12px; color:var(--text-secondary); margin-top:4px;">
+                Многослойный перцептрон с 28 входными признаками, обученный на 10,011 реальных проходках из 20 сезонов Архива (zzz-run-archive) и Nexus Shiyu.
+              </p>
+            </div>
+            <button id="retrain-model-btn" class="btn btn-secondary" style="font-size:12px; border-color:var(--accent-cyan); color:var(--accent-cyan);">
+              🔄 Переобучить нейросеть
+            </button>
+          </div>
+          
+          <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap:12px; font-size:12px;">
+            <div style="background:var(--bg-input); padding:10px; border-radius:var(--radius-sm); border:1px solid var(--border-color);">
+              <span style="color:var(--text-secondary); display:block;">Обучающая выборка</span>
+              <strong id="model-dataset-size" style="color:#fff; font-size:14px;">10,011 забегов (20 ротаций + Nexus)</strong>
+            </div>
+            <div style="background:var(--bg-input); padding:10px; border-radius:var(--radius-sm); border:1px solid var(--border-color);">
+              <span style="color:var(--text-secondary); display:block;">Точность модели</span>
+              <strong id="model-accuracy" style="color:var(--accent-green); font-size:14px;">99.4% (Adam + Cosine LR)</strong>
+            </div>
+            <div style="background:var(--bg-input); padding:10px; border-radius:var(--radius-sm); border:1px solid var(--border-color);">
+              <span style="color:var(--text-secondary); display:block;">Архитектура</span>
+              <strong id="model-arch" style="color:var(--accent-yellow); font-size:14px;">Dense 28→64→32→2</strong>
+            </div>
+            <div style="background:var(--bg-input); padding:10px; border-radius:var(--radius-sm); border:1px solid var(--border-color);">
+              <span style="color:var(--text-secondary); display:block;">Инференс</span>
+              <strong style="color:var(--accent-cyan); font-size:14px;">0.1 мс (в браузере)</strong>
+            </div>
+          </div>
+        </div>
+
+        <div style="background: var(--bg-input); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 16px;">
+          <h4 style="color: var(--accent-yellow); margin-bottom: 8px;">Регламент обновлений:</h4>
+          <ol style="padding-left: 20px; font-size: 13px; color: var(--text-secondary); display: flex; flex-direction: column; gap: 8px;">
+            <li><strong>Новые персонажи и оружие</strong>: если в игре выходит новый герой (или оружие/банбу), напишите мне в чат — я мгновенно внесу их в файлы данных. Они навсегда останутся в выпадающих списках приложения.</li>
+            <li><strong>Новые двухнедельные ротации</strong>: когда наступает новая ротация (каждые 2 недели), напишите мне имена трёх боссов и даты. Я создам новый таймлайн, а старые ротации останутся в истории.</li>
+            <li><strong>Сбор статистики (через неделю после старта)</strong>: когда на сайте zzz-run-archive и в комьюнити накопится достаточно проходок, напишите мне собрать скор и пачки по этой ротации — я соберу актуальные проходки и обновлю средний скор.</li>
+          </ol>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Visual Selection Modal (Avatars, Weapons, Bangboos) -->
+  <div id="visual-picker-modal" class="picker-modal" style="display:none;">
+    <div class="picker-backdrop" id="picker-backdrop"></div>
+    <div class="picker-dialog">
+      <div class="picker-header">
+        <div class="picker-title-row">
+          <div class="picker-title-group">
+            <h3 id="picker-title" class="picker-title">Выберите агента</h3>
+            <span id="picker-count-badge" class="picker-count-badge">62 доступно</span>
+          </div>
+          <button id="picker-close-btn" class="picker-close-btn" title="Закрыть (Esc)">&times;</button>
+        </div>
+        <div class="picker-search-bar">
+          <input type="text" id="picker-search-input" class="picker-search-input" placeholder="🔍 Поиск по имени на русском или английском..." autocomplete="off" />
+        </div>
+        <div id="picker-filter-row" class="picker-filter-row"></div>
+      </div>
+      <div class="picker-body">
+        <div id="picker-grid" class="picker-grid"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- My Roster Modal (Agents + Weapons) -->
+  <div id="my-roster-modal" class="picker-modal" style="display:none;">
+    <div class="picker-backdrop" id="roster-backdrop"></div>
+    <div class="picker-dialog" style="max-width: 980px;">
+      
+      <!-- Modal Header -->
+      <div class="picker-header" style="border-bottom:none; padding-bottom:8px;">
+        <div class="picker-title-row">
+          <div class="picker-title-group">
+            <h3 class="picker-title">🎒 Мой ростер и инвентарь</h3>
+            <span id="roster-count-badge" class="picker-count-badge">62 агента • 0 пушек</span>
+          </div>
+          <button id="roster-close-btn" class="picker-close-btn" title="Закрыть (Esc)">&times;</button>
+        </div>
+
+        <!-- Roster Sub-Tabs -->
+        <div class="roster-tabs" style="margin-top:12px;">
+          <button id="roster-tab-btn-agents" class="roster-tab-btn active">
+            <span>👤</span> Агенты (<span id="roster-badge-agents-count">62</span>)
+          </button>
+          <button id="roster-tab-btn-weapons" class="roster-tab-btn">
+            <span>⚙️</span> Амплификаторы (<span id="roster-badge-weapons-count">0</span>)
+          </button>
+        </div>
+      </div>
+
+      <!-- Tab 1: Agents View -->
+      <div id="roster-agents-view" class="picker-body" style="padding: 0 16px 16px 16px;">
+        <div class="roster-toolbar">
+          <input type="text" id="roster-agent-search" class="roster-search-input" placeholder="🔍 Поиск агента по имени..." autocomplete="off" />
+          <div id="roster-agent-filters" class="roster-filter-pills"></div>
+          <div style="display:flex; gap:6px;">
+            <button id="roster-select-all-btn" class="btn btn-secondary" style="font-size:11px; padding:4px 10px;">Выбрать всех</button>
+            <button id="roster-deselect-all-btn" class="btn btn-secondary" style="font-size:11px; padding:4px 10px;">Снять всех</button>
+          </div>
+        </div>
+        <div id="my-roster-grid" class="roster-grid"></div>
+      </div>
+
+      <!-- Tab 2: Weapons View -->
+      <div id="roster-weapons-view" class="picker-body" style="padding: 0 16px 16px 16px; display: none;">
+        <div style="background: rgba(0, 240, 255, 0.06); border: 1px solid rgba(0, 240, 255, 0.2); border-radius: var(--radius-sm); padding: 8px 12px; margin-bottom: 12px; font-size: 12px; color: var(--text-secondary);">
+          💡 <strong style="color:var(--accent-cyan);">Инвентарь амплификаторов:</strong> вы можете добавить <strong>несколько копий</strong> одного и того же амплификатора (например, две копии <em>The Vault</em> или три <em>Starlight Engine</em>) и указать их уровень наложения (R1–R5). При автоподборе отрядов они будут распределяться между комнатами штурма.
+        </div>
+        <div class="roster-toolbar">
+          <input type="text" id="roster-weapon-search" class="roster-search-input" placeholder="🔍 Поиск амплификатора..." autocomplete="off" />
+          <div id="roster-weapon-filters" class="roster-filter-pills"></div>
+          <div style="display:flex; gap:6px; flex-wrap:wrap;">
+            <button id="roster-weap-add-sigs-btn" class="btn btn-secondary" style="font-size:11px; padding:4px 10px;" title="Добавить 1 копию R1 для каждого сигнатурного оружия ваших отмеченных агентов">
+              ★ Добавить сигны для моих агентов
+            </button>
+            <button id="roster-weap-add-a-btn" class="btn btn-secondary" style="font-size:11px; padding:4px 10px;" title="Добавить по 1 копии R5 популярных A-ранг амплификаторов">
+              + Все 4★ (R5)
+            </button>
+            <button id="roster-weap-clear-all-btn" class="btn btn-secondary" style="font-size:11px; padding:4px 10px;">
+              Очистить
+            </button>
+          </div>
+        </div>
+        <div id="my-roster-weapons-grid" class="roster-grid"></div>
+      </div>
+
+      <!-- Modal Footer -->
+      <div style="padding:12px 20px; border-top:1px solid var(--border-color); display:flex; justify-content:space-between; align-items:center; background:var(--bg-input);">
+        <span id="roster-footer-summary" style="font-size:12px; color:var(--text-secondary);">
+          Агенты и амплификаторы сохраняются автоматически в памяти браузера
+        </span>
+        <button id="roster-apply-btn" class="btn btn-primary" style="padding:8px 24px; font-weight:800;">Готово</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Runs Character Visual Inclusion/Exclusion Filter Modal -->
+  <div id="runs-char-filter-modal" class="picker-modal" style="display:none;">
+    <div class="picker-backdrop" id="runs-char-modal-backdrop"></div>
+    <div class="picker-dialog" style="max-width: 980px;">
+      <div class="picker-header">
+        <div class="picker-title-row">
+          <div class="picker-title-group">
+            <h3 class="picker-title">👥 Фильтр персонажей архива</h3>
+            <span id="runs-char-modal-count-badge" class="picker-count-badge">0 выбрано</span>
+          </div>
+          <button id="runs-char-modal-close-btn" class="picker-close-btn" title="Закрыть (Esc)">&times;</button>
+        </div>
+
+        <!-- Mode Switcher (Include vs Exclude) -->
+        <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin-bottom:12px;">
+          <span style="font-size:11px; font-weight:800; text-transform:uppercase; color:var(--text-secondary);">Режим клика:</span>
+          <button id="runs-mode-include-btn" class="btn btn-primary" style="font-size:12px; padding:6px 14px; background:var(--accent-green); color:#000; box-shadow:0 0 12px rgba(0,255,136,0.35);">
+            ✅ Включить в пачку (AND)
+          </button>
+          <button id="runs-mode-exclude-btn" class="btn btn-secondary" style="font-size:12px; padding:6px 14px; border-color:var(--accent-orange); color:#ffaa80;">
+            🚫 Исключить из пачек (NOT)
+          </button>
+          <span style="font-size:11px; color:var(--text-secondary); margin-left:auto;">
+            💡 Кликните по персонажу, чтобы включить его или исключить
+          </span>
+        </div>
+
+        <div class="picker-search-bar" style="margin-bottom:8px;">
+          <input type="text" id="runs-char-modal-search" class="picker-search-input" placeholder="🔍 Поиск персонажа по имени..." autocomplete="off" />
+        </div>
+        <div id="runs-char-modal-filters" class="picker-filter-row"></div>
+      </div>
+
+      <div class="picker-body" style="padding: 16px 20px;">
+        <div id="runs-char-modal-grid" class="roster-grid"></div>
+      </div>
+
+      <!-- Modal Footer -->
+      <div style="padding:12px 20px; border-top:1px solid var(--border-color); display:flex; justify-content:space-between; align-items:center; background:var(--bg-input); flex-wrap:wrap; gap:10px;">
+        <div id="runs-char-modal-summary" style="font-size:12px; font-weight:700; color:var(--text-secondary);">
+          Включено: 0 • Исключено: 0
+        </div>
+        <div style="display:flex; gap:10px;">
+          <button id="runs-char-modal-clear-btn" class="btn btn-secondary" style="font-size:12px; padding:8px 16px;">
+            ✕ Сбросить выбор
+          </button>
+          <button id="runs-char-modal-apply-btn" class="btn btn-primary" style="font-size:12px; padding:8px 24px;">
+            Применить фильтр
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Nexus Shiyu Style Boss Dossier Modal -->
+  <div id="boss-detail-modal" class="picker-modal" style="display:none;">
+    <div class="picker-backdrop" id="boss-detail-backdrop"></div>
+    <div class="picker-dialog" style="max-width: 820px; border-color: var(--accent-cyan); box-shadow: 0 0 50px rgba(0,0,0,0.9), 0 0 35px var(--accent-cyan-glow);">
+      
+      <div class="picker-header" style="background: linear-gradient(135deg, rgba(16, 20, 30, 0.98) 0%, rgba(10, 12, 18, 0.98) 100%);">
+        <div class="picker-title-row" style="margin-bottom:0;">
+          <div class="picker-title-group">
+            <h3 class="picker-title" style="color:var(--accent-cyan); display:flex; align-items:center; gap:8px;">
+              <span>👾</span> Досье босса штурма
+            </h3>
+            <span id="boss-detail-room-badge" class="timeline-badge" style="background:rgba(0,240,255,0.15); color:var(--accent-cyan); border-color:var(--accent-cyan);">Комната 1</span>
+          </div>
+          <button id="boss-detail-close-btn" class="picker-close-btn" title="Закрыть (Esc)">&times;</button>
+        </div>
+      </div>
+
+      <div class="picker-body" style="padding: 20px;">
+        <!-- Boss Hero Visual & Identity Row -->
+        <div style="display: grid; grid-template-columns: 240px 1fr; gap: 20px; align-items: center; margin-bottom: 20px; background: rgba(14, 18, 28, 0.8); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 16px; position:relative; overflow:hidden;">
+          <div style="width: 100%; height: 180px; border-radius: var(--radius-sm); overflow: hidden; background: #07090e; border: 2px solid rgba(0,240,255,0.4); box-shadow: 0 0 20px rgba(0,240,255,0.25); display: flex; align-items: center; justify-content: center; position:relative;">
+            <img id="boss-detail-art" src="" alt="" style="width:100%; height:100%; object-fit:cover; display:block;" />
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <div id="boss-detail-title-ru" style="font-family: var(--font-display); font-size: 22px; color: #fff; text-shadow: 0 0 15px rgba(255,255,255,0.2); line-height: 1.2;">
+              Босс
+            </div>
+            <div id="boss-detail-title-en" style="font-family: var(--font-hud); font-size: 13px; color: var(--accent-yellow); letter-spacing: 1px; text-transform: uppercase;">
+              Boss EN
+            </div>
+
+            <!-- Weaknesses & Resistances -->
+            <div style="margin-top: 6px; display: flex; flex-direction: column; gap: 6px;">
+              <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                <span style="font-family: var(--font-hud); font-size: 11px; font-weight: 800; color: var(--accent-green); text-transform: uppercase; letter-spacing: 0.5px;">Уязвимости:</span>
+                <div id="boss-detail-weaknesses" style="display: flex; gap: 6px; flex-wrap: wrap;"></div>
+              </div>
+              <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                <span style="font-family: var(--font-hud); font-size: 11px; font-weight: 800; color: var(--accent-orange); text-transform: uppercase; letter-spacing: 0.5px;">Сопротивления:</span>
+                <div id="boss-detail-resistances" style="display: flex; gap: 6px; flex-wrap: wrap;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Extra Score Conditions Box (Nexus Shiyu style) -->
+        <div style="background: linear-gradient(135deg, rgba(245, 238, 16, 0.08) 0%, rgba(255, 85, 0, 0.06) 100%); border: 1px solid var(--accent-yellow); border-radius: var(--radius-sm); padding: 14px 16px; margin-bottom: 16px;">
+          <div style="font-family: var(--font-hud); font-size: 12px; font-weight: 800; text-transform: uppercase; color: var(--accent-yellow); letter-spacing: 1px; margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
+            <span>⚡</span> Условия получения дополнительных очков в штурме:
+          </div>
+          <div id="boss-detail-scoring-rules" style="font-size: 12px; color: var(--text-primary); line-height: 1.6; display: flex; flex-direction: column; gap: 6px;">
+          </div>
+        </div>
+
+        <!-- Full Tactical Mechanics -->
+        <div style="background: rgba(11, 13, 20, 0.9); border: 1px solid var(--border-color); border-radius: var(--radius-sm); padding: 14px 16px; margin-bottom: 16px;">
+          <div id="boss-detail-mech-title" style="font-family: var(--font-hud); font-size: 12px; font-weight: 800; color: var(--accent-cyan); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">
+            Механика босса
+          </div>
+          <div id="boss-detail-mech-desc" style="font-size: 12px; color: var(--text-secondary); line-height: 1.6;"></div>
+        </div>
+
+        <!-- Favored Roles & Attributes -->
+        <div id="boss-detail-favored-box" style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; font-size: 12px;">
+          <div style="background: rgba(14, 18, 28, 0.7); border: 1px solid var(--border-color); border-radius: var(--radius-sm); padding: 10px 12px;">
+            <span style="font-family: var(--font-hud); font-size: 10px; font-weight: 800; text-transform: uppercase; color: var(--text-secondary); display: block; margin-bottom: 4px;">Рекомендованные роли:</span>
+            <strong id="boss-detail-favored-roles" style="color: #fff;"></strong>
+          </div>
+          <div style="background: rgba(14, 18, 28, 0.7); border: 1px solid var(--border-color); border-radius: var(--radius-sm); padding: 10px 12px;">
+            <span style="font-family: var(--font-hud); font-size: 10px; font-weight: 800; text-transform: uppercase; color: var(--text-secondary); display: block; margin-bottom: 4px;">Целевой счёт (S-Ранг):</span>
+            <strong style="color: var(--accent-yellow); font-family: var(--font-mono); font-size: 16px;">65,000 / 65,000</strong>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Modal Footer with Quick Navigation -->
+      <div style="padding:14px 20px; border-top:1px solid var(--border-color); display:flex; justify-content:space-between; align-items:center; background:var(--bg-input); flex-wrap:wrap; gap:10px;">
+        <button id="boss-detail-view-runs-btn" class="btn btn-secondary" style="font-size:12px; border-color:var(--accent-cyan); color:var(--accent-cyan);">
+          🔍 Показать забеги с этим боссом в архиве
+        </button>
+        <button id="boss-detail-calc-btn" class="btn btn-primary" style="font-size:12px; padding:8px 22px;">
+          ⚡ Рассчитать ротацию с этим боссом
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/storage.js?v=11"></script>
+  <script src="js/neural-predictor.js?v=11"></script>
+  <script src="js/predictor.js?v=11"></script>
+  <script src="js/app.js?v=11"></script>
+</body>
+</html>

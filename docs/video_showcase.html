@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZZZ Assault Predictor | Video Showcase</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,500;0,600;0,700;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Russo+One&family=Teko:wght@600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-void: #07080b;
+      --accent-yellow: #f5ee10;
+      --accent-cyan: #00f0ff;
+      --accent-orange: #ff5500;
+      --font-display: 'Russo One', sans-serif;
+      --font-hud: 'Chakra Petch', sans-serif;
+      --font-mono: 'Teko', sans-serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #000;
+      color: #fff;
+      font-family: var(--font-body);
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      user-select: none;
+    }
+
+    /* Top Ticker */
+    .showcase-header {
+      height: 48px;
+      background: rgba(12, 14, 21, 0.95);
+      border-bottom: 1px solid #23293a;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 24px;
+      z-index: 100;
+    }
+    .header-logo {
+      font-family: var(--font-hud);
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      color: var(--accent-yellow);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .header-chapter {
+      font-family: var(--font-hud);
+      font-size: 13px;
+      color: var(--accent-cyan);
+      letter-spacing: 1px;
+    }
+
+    /* Stage / Viewport */
+    .viewport {
+      flex: 1;
+      position: relative;
+      background: #050608;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .slide-media {
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      transition: opacity 0.8s ease-in-out;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .slide-media.active {
+      opacity: 1;
+      animation: kenBurns 12s infinite alternate ease-in-out;
+    }
+
+    @keyframes kenBurns {
+      0% { transform: scale(1.0) translate(0, 0); }
+      100% { transform: scale(1.08) translate(-1%, -1%); }
+    }
+
+    /* Subtitles Card */
+    .subtitle-overlay {
+      position: absolute;
+      bottom: 84px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: min(90%, 960px);
+      background: rgba(10, 12, 18, 0.88);
+      border: 1px solid rgba(245, 238, 16, 0.4);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.8), 0 0 20px rgba(245, 238, 16, 0.15);
+      border-radius: 8px;
+      padding: 16px 24px;
+      backdrop-filter: blur(10px);
+      z-index: 100;
+      transition: all 0.3s;
+    }
+    .subtitle-badge {
+      font-family: var(--font-hud);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: var(--accent-yellow);
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+    .subtitle-text {
+      font-size: 17px;
+      line-height: 1.5;
+      color: #f0f3f8;
+    }
+
+    /* Bottom Player Bar */
+    .player-controls {
+      height: 72px;
+      background: rgba(12, 14, 21, 0.98);
+      border-top: 1px solid #23293a;
+      display: flex;
+      align-items: center;
+      padding: 0 24px;
+      gap: 20px;
+      z-index: 100;
+    }
+    .btn-ctrl {
+      background: #181d2b;
+      border: 1px solid #2c354d;
+      color: #fff;
+      font-family: var(--font-hud);
+      font-weight: 700;
+      font-size: 14px;
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s;
+    }
+    .btn-ctrl:hover {
+      background: var(--accent-yellow);
+      color: #000;
+      border-color: var(--accent-yellow);
+    }
+    .btn-play {
+      background: var(--accent-yellow);
+      color: #000;
+      border-color: var(--accent-yellow);
+    }
+
+    .timeline-container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .timeline-bar {
+      height: 6px;
+      background: #181d2b;
+      border-radius: 3px;
+      overflow: hidden;
+      cursor: pointer;
+      position: relative;
+    }
+    .timeline-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent-cyan), var(--accent-yellow));
+      width: 0%;
+      transition: width 0.1s linear;
+    }
+    .timeline-time {
+      display: flex;
+      justify-content: space-between;
+      font-family: var(--font-mono);
+      font-size: 15px;
+      color: #7b859e;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Info -->
+  <header class="showcase-header">
+    <div class="header-logo">
+      <span>⚡</span> ZZZ ASSAULT PREDICTOR // VIDEO SHOWCASE
+    </div>
+    <div class="header-chapter" id="chapter-title">ГЛАВА 1: ВВЕДЕНИЕ</div>
+  </header>
+
+  <!-- Viewport Stage -->
+  <main class="viewport" id="viewport">
+    <div class="slide-media active" style="background-image: url('screenshots/01_main_calculator.png');"></div>
+    <div class="slide-media" style="background-image: url('screenshots/02_overview_3rooms.png');"></div>
+    <div class="slide-media" style="background-image: url('screenshots/03_boss_dossier.png');"></div>
+    <div class="slide-media" style="background-image: url('screenshots/04_bosses_database.png');"></div>
+    <div class="slide-media" style="background-image: url('screenshots/05_runs_visual_filter.png');"></div>
+    <div class="slide-media" style="background-image: url('screenshots/06_runs_archive_table.png');"></div>
+    <div class="slide-media" style="background-image: url('screenshots/07_my_roster_modal.png');"></div>
+
+    <!-- Subtitle Card -->
+    <div class="subtitle-overlay">
+      <div class="subtitle-badge" id="sub-badge">// ГЛАВА 1: ИДЕЯ ПРОЕКТА</div>
+      <div class="subtitle-text" id="sub-text">
+        Привет! Это калькулятор «Опасного Штурма» для игры Zenless Zone Zero. Мы сделали инструмент, который с помощью нейросети рассчитывает исход турнирных боев.
+      </div>
+    </div>
+  </main>
+
+  <!-- Player Controls -->
+  <footer class="player-controls">
+    <button class="btn-ctrl" id="prev-btn">⏮ Назад</button>
+    <button class="btn-ctrl btn-play" id="play-btn">⏸ Пауза</button>
+    <button class="btn-ctrl" id="next-btn">Вперед ⏭</button>
+
+    <div class="timeline-container">
+      <div class="timeline-bar" id="timeline-bar">
+        <div class="timeline-fill" id="timeline-fill"></div>
+      </div>
+      <div class="timeline-time">
+        <span id="cur-time">00:00</span>
+        <span id="total-time">01:45</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const slides = [
+      {
+        imageIndex: 0,
+        chapter: "ГЛАВА 1: КАЛЬКУЛЯТОР РОТАЦИИ",
+        badge: "// 01: ПРОГНОЗ ОЧКОВ ДО 65 000",
+        text: "Главная вкладка калькулятора: игрок выбирает трёх героев, оружие и созвездия. Нейросеть мгновенно прогнозирует счёт и показывает коридор мастерства — сколько очков выбьет киберспортсмен, а сколько останется при ошибках.",
+        duration: 12
+      },
+      {
+        imageIndex: 1,
+        chapter: "ГЛАВА 2: ОБЗОР 3-Х КОМНАТ",
+        badge: "// 02: ПЬЕДЕСТАЛ НА 195 000 ОЧКОВ",
+        text: "В турнире нужно пройти сразу 3 комнаты тремя разными пачками без единого повтора. Наш пьедестал рассчитывает суммарный счёт на 195k очков и оптимизирует распределение ресурсов.",
+        duration: 12
+      },
+      {
+        imageIndex: 6,
+        chapter: "ГЛАВА 3: АВТОПОДБОР РОСТЕРА",
+        badge: "// 03: КНОПКА «СОБРАТЬ ИЗ МОЕГО ПУЛА»",
+        text: "Игрок отмечает, какие персонажи у него есть, жмет одну кнопку — и алгоритм автоматически раскладывает героев по 3 комнатам так, чтобы выжать максимум очков под каждого босса.",
+        duration: 12
+      },
+      {
+        imageIndex: 2,
+        chapter: "ГЛАВА 4: ДОСЬЕ БОССОВ",
+        badge: "// 04: АНАТОМИЯ ВРАГОВ NEXUS SHIYU",
+        text: "Карточка босса с детальным рентгеном: слабые места, сопротивления к стихиям и точные условия начисления бонусов (парирования, снятие щитов, элементальный Хаос).",
+        duration: 10
+      },
+      {
+        imageIndex: 3,
+        chapter: "ГЛАВА 5: БАЗА РОТАЦИЙ",
+        badge: "// 05: СЕЗОНЫ И ТУРНИРНЫЕ МОДИФИКАТОРЫ",
+        text: "Каждые две недели правила штурма меняются. Наша база хранит все актуальные ротации, позволяя тестировать прошлые и будущие составы боссов.",
+        duration: 10
+      },
+      {
+        imageIndex: 4,
+        chapter: "ГЛАВА 6: УМНЫЙ ВИЗУАЛЬНЫЙ ФИЛЬТР",
+        badge: "// 06: ЛОГИКА AND И NOT",
+        text: "Уникальный фильтр забегов: клик по героям находит их совместные бои (AND), а правый клик исключает дорогих персонажей (NOT), чтобы найти бюджетные проходки.",
+        duration: 12
+      },
+      {
+        imageIndex: 5,
+        chapter: "ГЛАВА 7: 10 011 ТУРНИРНЫХ БОЕВ",
+        badge: "// 07: РЕАЛЬНЫЙ АРХИВ ЗАБЕГОВ",
+        text: "Огромная база из 10 011 реальных матчей с азиатских турниров и записей про-игроков. Каждый бой верифицирован и проверен системой Костов.",
+        duration: 12
+      }
+    ];
+
+    let currentSlide = 0;
+    let isPlaying = true;
+    let elapsed = 0;
+    const totalDuration = slides.reduce((acc, s) => acc + s.duration, 0);
+
+    const mediaEls = document.querySelectorAll('.slide-media');
+    const chapterTitleEl = document.getElementById('chapter-title');
+    const subBadgeEl = document.getElementById('sub-badge');
+    const subTextEl = document.getElementById('sub-text');
+    const fillEl = document.getElementById('timeline-fill');
+    const curTimeEl = document.getElementById('cur-time');
+    const totalTimeEl = document.getElementById('total-time');
+    const playBtn = document.getElementById('play-btn');
+
+    function fmt(sec) {
+      const m = Math.floor(sec / 60).toString().padStart(2, '0');
+      const s = Math.floor(sec % 60).toString().padStart(2, '0');
+      return `${m}:${s}`;
+    }
+
+    totalTimeEl.textContent = fmt(totalDuration);
+
+    function showSlide(idx) {
+      currentSlide = idx;
+      const s = slides[idx];
+      mediaEls.forEach((el, i) => {
+        el.classList.toggle('active', i === s.imageIndex);
+      });
+      chapterTitleEl.textContent = s.chapter;
+      subBadgeEl.textContent = s.badge;
+      subTextEl.textContent = s.text;
+    }
+
+    function tick() {
+      if (isPlaying) {
+        elapsed += 0.2;
+        if (elapsed >= totalDuration) elapsed = 0;
+
+        let acc = 0;
+        let foundIdx = 0;
+        for (let i = 0; i < slides.length; i++) {
+          if (elapsed >= acc && elapsed < acc + slides[i].duration) {
+            foundIdx = i;
+            break;
+          }
+          acc += slides[i].duration;
+        }
+
+        if (foundIdx !== currentSlide) showSlide(foundIdx);
+
+        fillEl.style.width = ((elapsed / totalDuration) * 100) + '%';
+        curTimeEl.textContent = fmt(elapsed);
+      }
+    }
+
+    setInterval(tick, 200);
+
+    playBtn.onclick = () => {
+      isPlaying = !isPlaying;
+      playBtn.textContent = isPlaying ? '⏸ Пауза' : '▶ Старт';
+    };
+
+    document.getElementById('next-btn').onclick = () => {
+      let acc = 0;
+      for (let i = 0; i <= currentSlide; i++) acc += slides[i].duration;
+      elapsed = acc % totalDuration;
+      tick();
+    };
+
+    document.getElementById('prev-btn').onclick = () => {
+      let acc = 0;
+      for (let i = 0; i < currentSlide - 1; i++) acc += slides[i].duration;
+      elapsed = Math.max(0, acc);
+      tick();
+    };
+
+    showSlide(0);
+  </script>
+</body>
+</html>

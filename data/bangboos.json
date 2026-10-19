@@ -1,0 +1,289 @@
+[
+  {
+    "id": "54014",
+    "name": "Agent Gulliver",
+    "zhName": "格列佛探员",
+    "rarity": "S",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/bangboo_webp/agent_gulliver.webp"
+  },
+  {
+    "id": "54005",
+    "name": "Amillion",
+    "zhName": "艾米莉安",
+    "rarity": "S",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/bangboo_webp/amillion.webp"
+  },
+  {
+    "id": "54023",
+    "name": "Ariel",
+    "zhName": "艾瑞儿",
+    "rarity": "S",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/bangboo_webp/Ariel.webp"
+  },
+  {
+    "id": "54013",
+    "name": "Bangvolver",
+    "zhName": "左轮布",
+    "rarity": "S",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/bangboo_webp/bangvolver.webp"
+  },
+  {
+    "id": "54017",
+    "name": "Belion",
+    "zhName": "狮耶",
+    "rarity": "S",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/bangboo_webp/belion.webp"
+  },
+  {
+    "id": "54010",
+    "name": "Biggest Fan",
+    "zhName": "阿饭",
+    "rarity": "S",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/bangboo_webp/biggest_fan.webp"
+  },
+  {
+    "id": "54020",
+    "name": "Birkblick",
+    "zhName": "比克布利克",
+    "rarity": "S",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/bangboo_webp/birkblick.webp"
+  },
+  {
+    "id": "54004",
+    "name": "Butler",
+    "zhName": "巴特勒",
+    "rarity": "S",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/bangboo_webp/butler.webp"
+  },
+  {
+    "id": "54019",
+    "name": "Mercury",
+    "zhName": "「墨丘利」",
+    "rarity": "S",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/bangboo_webp/mercury.webp"
+  },
+  {
+    "id": "54018",
+    "name": "Miss Esme",
+    "zhName": "艾丝弥小姐",
+    "rarity": "S",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/bangboo_webp/miss_esme.webp"
+  },
+  {
+    "id": "54012",
+    "name": "Officer Cui",
+    "zhName": "阿崔巡查",
+    "rarity": "S",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/bangboo_webp/officer_cui.webp"
+  },
+  {
+    "id": "54008",
+    "name": "Plugboo",
+    "zhName": "插头布",
+    "rarity": "S",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/bangboo_webp/plugboo.webp"
+  },
+  {
+    "id": "54011",
+    "name": "Red Moccus",
+    "zhName": "赤红莫库斯",
+    "rarity": "S",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/bangboo_webp/red_moccus.webp"
+  },
+  {
+    "id": "54009",
+    "name": "Resonaboo",
+    "zhName": "共鸣布",
+    "rarity": "S",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/bangboo_webp/resonaboo.png"
+  },
+  {
+    "id": "54016",
+    "name": "Robin",
+    "zhName": "罗宾",
+    "rarity": "S",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/bangboo_webp/robin.webp"
+  },
+  {
+    "id": "54006",
+    "name": "Rocketboo",
+    "zhName": "飚速布",
+    "rarity": "S",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/bangboo_webp/rocketboo.webp"
+  },
+  {
+    "id": "54002",
+    "name": "Safety",
+    "zhName": "阿全",
+    "rarity": "S",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/bangboo_webp/safety.webp"
+  },
+  {
+    "id": "54001",
+    "name": "Sharkboo",
+    "zhName": "鲨牙布",
+    "rarity": "S",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/bangboo_webp/sharkboo.webp"
+  },
+  {
+    "id": "54015",
+    "name": "Snap",
+    "zhName": "咔嚓仔",
+    "rarity": "S",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/bangboo_webp/snap.webp"
+  },
+  {
+    "id": "54021",
+    "name": "Sprout",
+    "zhName": "芽芽",
+    "rarity": "S",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/bangboo_webp/sprout.webp"
+  },
+  {
+    "id": "54022",
+    "name": "Ultra Jake",
+    "zhName": "超极杰克",
+    "rarity": "S",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/bangboo_webp/ultra_jake.webp"
+  },
+  {
+    "id": "53008",
+    "name": "Avocaboo",
+    "zhName": "果核布",
+    "rarity": "A",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/bangboo_webp/avocaboo.webp"
+  },
+  {
+    "id": "53013",
+    "name": "Baddieboo",
+    "zhName": "不良布",
+    "rarity": "A",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/bangboo_webp/baddieboo.webp"
+  },
+  {
+    "id": "53006",
+    "name": "Bagboo",
+    "zhName": "纸袋布",
+    "rarity": "A",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/bangboo_webp/bagboo.webp"
+  },
+  {
+    "id": "53019",
+    "name": "Bild N. Boolok",
+    "zhName": "乐玩布",
+    "rarity": "A",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/bangboo_webp/bild_n_boolok.webp"
+  },
+  {
+    "id": "53009",
+    "name": "Boollseye",
+    "zhName": "飞靶布",
+    "rarity": "A",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/bangboo_webp/boollseye.webp"
+  },
+  {
+    "id": "53021",
+    "name": "Booltergeist",
+    "zhName": "幽浮布",
+    "rarity": "A",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/bangboo_webp/booltergeist.webp"
+  },
+  {
+    "id": "53012",
+    "name": "Booressure",
+    "zhName": "气压布",
+    "rarity": "A",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/bangboo_webp/booressure.webp"
+  },
+  {
+    "id": "53015",
+    "name": "Brawlerboo",
+    "zhName": "格斗布",
+    "rarity": "A",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/bangboo_webp/brawlerboo.webp"
+  },
+  {
+    "id": "53007",
+    "name": "Cryboo",
+    "zhName": "泪眼布",
+    "rarity": "A",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/bangboo_webp/cryboo.webp"
+  },
+  {
+    "id": "54003",
+    "name": "Devilboo",
+    "zhName": "恶魔布",
+    "rarity": "A",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/bangboo_webp/devilboo.webp"
+  },
+  {
+    "id": "53010",
+    "name": "Electroboo",
+    "zhName": "电击布",
+    "rarity": "A",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/bangboo_webp/electroboo.webp"
+  },
+  {
+    "id": "53016",
+    "name": "Excaliboo",
+    "zhName": "圣剑布",
+    "rarity": "A",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/bangboo_webp/excaliboo.webp"
+  },
+  {
+    "id": "53003",
+    "name": "Exploreboo",
+    "zhName": "寻宝布",
+    "rarity": "A",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/bangboo_webp/exploreboo.webp"
+  },
+  {
+    "id": "53017",
+    "name": "Knightboo",
+    "zhName": "骑士布",
+    "rarity": "A",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/bangboo_webp/knightboo.webp"
+  },
+  {
+    "id": "53002",
+    "name": "Luckyboo",
+    "zhName": "招财布",
+    "rarity": "A",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/bangboo_webp/luckyboo.webp"
+  },
+  {
+    "id": "53011",
+    "name": "Magnetiboo",
+    "zhName": "磁力布",
+    "rarity": "A",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/bangboo_webp/magnetiboo.webp"
+  },
+  {
+    "id": "53014",
+    "name": "Overtimeboo",
+    "zhName": "加班布",
+    "rarity": "A",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/bangboo_webp/overtimeboo.webp"
+  },
+  {
+    "id": "53005",
+    "name": "Paperboo",
+    "zhName": "纸壳布",
+    "rarity": "A",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/bangboo_webp/paperboo.webp"
+  },
+  {
+    "id": "53001",
+    "name": "Penguinboo",
+    "zhName": "企鹅布",
+    "rarity": "A",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/bangboo_webp/penguinboo.webp"
+  },
+  {
+    "id": "53004",
+    "name": "Sumoboo",
+    "zhName": "扑击布",
+    "rarity": "A",
+    "imageUrl": "https://zzz-run-archive.onrender.com/assets/bangboo_webp/sumoboo.webp"
+  }
+]
