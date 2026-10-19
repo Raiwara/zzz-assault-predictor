@@ -16,6 +16,10 @@
     "deep-mlp",
     "calculator"
   ],
-  "author": "",
+  "author": "Raiwara",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Raiwara/zzz-assault-predictor.git"
+  },
   "license": "MIT"
 }

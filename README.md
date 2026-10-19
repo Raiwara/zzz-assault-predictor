@@ -86,7 +86,7 @@
 
 ### 1. Клонирование и запуск сервера
 ```bash
-git clone https://github.com/your-username/zzz-assault-predictor.git
+git clone https://github.com/Raiwara/zzz-assault-predictor.git
 cd zzz-assault-predictor
 node server.js
 ```
